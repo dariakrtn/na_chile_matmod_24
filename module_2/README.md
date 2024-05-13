@@ -11,7 +11,7 @@ Given a video of chess match & pgn file of this game create an interesting & dyn
 
 #### Linux
 
-```bash
+```console
 git clone https://github.com/dariakrtn/na_chile_matmod_24.git
 
 cd na_chile_matmod_24/module_2
