@@ -18,6 +18,7 @@ cd na_chile_matmod_24/module_2
 
 sudo docker compose up
 ```
+by default will be available at http://127.0.0.1:8501
 
 #### Windows
 ```
