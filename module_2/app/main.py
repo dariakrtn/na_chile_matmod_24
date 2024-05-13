@@ -1,5 +1,6 @@
 import streamlit as st
 from datetime import datetime
+from utils import get_sec
 
 from converter import convert_video
 
@@ -15,6 +16,9 @@ with col2:
     pgn_file = st.file_uploader(label="Choose a PGN", type=["pgn"])
 
 
+time_str = st.text_input("Enter time when first move occured (HH : MM : SS)", "00:00:00")
+
+
 # choose action section
 col1, col2, col3 = st.columns(3)
 
@@ -28,27 +32,24 @@ with col3:
     btn3 = st.button("Get interesting moments") 
 
 
-
 # actions
-
 if btn1: 
 
     #check for file presence
-    if True:#(video_file != None) and (pgn_file != None):
+    if (video_file != None) and (pgn_file != None):
     
         video_file_converted = convert_video(video_file, pgn_file)
+        
         # show video file
         st.video(video_file_converted.read())
-        
-        text = st.text_input("chose time HH : MM : SS", "00:00:00")
-        if text:
-            now = datetime.now()
-            date_time = now.strftime("%m-%d-%Y-%H-%M-%S")
-            
-            file_name = date_time    
-            
-            # download video file
-            st.download_button(label="Download", data=video_file_converted, file_name=file_name)
+
+        now = datetime.now()
+        date_time = now.strftime("%m-%d-%Y-%H-%M-%S")
+
+        file_name = date_time    
+
+        # download video file
+        st.download_button(label="Download", data=video_file_converted, file_name=file_name)
     else:
         st.error("choose video & pgn")
 
