@@ -32,7 +32,6 @@ with col3:
     btn3 = st.button("Get interesting moments") 
 
 
-
 # actions
 if btn1: 
 
