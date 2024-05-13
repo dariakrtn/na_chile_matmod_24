@@ -1,4 +1,4 @@
-# Chess Video Intersting
+# Chess Video Improver
 
 ---
 
