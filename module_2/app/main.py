@@ -32,19 +32,23 @@ with col3:
 # actions
 
 if btn1: 
-    if (video_file != None) and (pgn_file != None):
+
+    #check for file presence
+    if True:#(video_file != None) and (pgn_file != None):
     
         video_file_converted = convert_video(video_file, pgn_file)
         # show video file
         st.video(video_file_converted.read())
         
-        now = datetime.now()
-        date_time = now.strftime("%m-%d-%Y-%H-%M-%S")
-        
-        file_name = date_time    
-        
-        # download video file
-        st.download_button(label="Download", data=video_file_converted, file_name=file_name)
+        text = st.text_input("chose time HH : MM : SS", "00:00:00")
+        if text:
+            now = datetime.now()
+            date_time = now.strftime("%m-%d-%Y-%H-%M-%S")
+            
+            file_name = date_time    
+            
+            # download video file
+            st.download_button(label="Download", data=video_file_converted, file_name=file_name)
     else:
         st.error("choose video & pgn")
 
