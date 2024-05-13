@@ -1,0 +1,79 @@
+{
+  "games": [
+    {
+      "white": "Lu, Miaoyi",
+      "moves": [
+        {"num_move": 4, "white_move": "O-O", "black_move": "Bg7", "comment": "White castles kingside early for king safety."},
+        {"num_move": 6, "white_move": "Bxc6", "black_move": "dxc6", "comment": "White exchanges bishop for knight, doubling black's pawns."},
+        {"num_move": 8, "white_move": "Na3", "black_move": "Nh6", "comment": "White develops knight to an unusual square, aiming for c4."},
+        {"num_move": 10, "white_move": "a5", "black_move": "O-O", "comment": "White advances the a-pawn, aiming to create weaknesses."},
+        {"num_move": 12, "white_move": "Be3", "black_move": "Be6", "comment": "White develops the bishop to a strong square, eyeing the queenside."},
+        {"num_move": 14, "white_move": "Bxh6", "black_move": "Nxh6", "comment": "White exchanges bishop to remove a key defender."},
+        {"num_move": 17, "white_move": "h4", "black_move": "Bf7", "comment": "White advances the pawn, preparing a kingside attack."},
+        {"num_move": 20, "white_move": "h6", "black_move": "Rfd8", "comment": "White sacrifices the pawn to open the h-file."},
+        {"num_move": 22, "white_move": "Qf3", "black_move": "Nd4", "comment": "White centralizes the queen, increasing pressure on the kingside."},
+        {"num_move": 29, "white_move": "Qf3", "black_move": "Nf4+", "comment": "White prepares to invade with the queen, targeting weak squares."}
+      ]
+    },
+    {
+      "white": "Xu, Yuanyuan",
+      "moves": [
+        {"num_move": 5, "white_move": "b3", "black_move": "O-O", "comment": "White prepares to fianchetto the bishop and control the long diagonal."},
+        {"num_move": 7, "white_move": "g4", "black_move": "e5", "comment": "White advances the pawn aggressively to disrupt black's development."},
+        {"num_move": 10, "white_move": "Bxc3", "black_move": "Qxf6", "comment": "White exchanges pieces to maintain control over the center."},
+        {"num_move": 13, "white_move": "Nxh7", "black_move": "Kxh7", "comment": "White sacrifices the knight to open up black's king."},
+        {"num_move": 16, "white_move": "O-O-O", "black_move": "Kf8", "comment": "White castles queenside, aiming to attack on the kingside."},
+        {"num_move": 18, "white_move": "Qf3", "black_move": "Nc6", "comment": "White centralizes the queen, increasing control over the board."},
+        {"num_move": 22, "white_move": "Bxg7+", "black_move": "Ke7", "comment": "White sacrifices the bishop to expose black's king further."},
+        {"num_move": 25, "white_move": "Bf1", "black_move": "Qe6", "comment": "White retreats the bishop to defend and prepare for future attacks."},
+        {"num_move": 27, "white_move": "Qh5", "black_move": "f6", "comment": "White places the queen on an active square, threatening various tactics."},
+        {"num_move": 33, "white_move": "Bg5", "black_move": "Nf4+", "comment": "White develops the bishop aggressively, aiming to exploit weaknesses."}
+      ]
+    },
+    {
+      "white": "Kubicka, Anna",
+      "moves": [
+        {"num_move": 5, "white_move": "O-O", "black_move": "Nxf3+", "comment": "White castles kingside to safeguard the king."},
+        {"num_move": 7, "white_move": "Bc4", "black_move": "Bc5", "comment": "White develops the bishop to an active square."},
+        {"num_move": 8, "white_move": "Qg3", "black_move": "Qe7", "comment": "White moves the queen to create threats on the kingside."},
+        {"num_move": 10, "white_move": "Bb3", "black_move": "Be6", "comment": "White retreats the bishop, preparing to redeploy it."},
+        {"num_move": 14, "white_move": "f4", "black_move": "exf4", "comment": "White advances the f-pawn to open lines and create attacking chances."},
+        {"num_move": 16, "white_move": "Bg5", "black_move": "O-O", "comment": "White develops the bishop, pinning the knight."},
+        {"num_move": 18, "white_move": "Raf1", "black_move": "Raf8", "comment": "White places both rooks on the f-file, preparing for an attack."},
+        {"num_move": 20, "white_move": "Qh3", "black_move": "b5", "comment": "White moves the queen to h3, aiming to create threats on the kingside."},
+        {"num_move": 23, "white_move": "Bxf6", "black_move": "Rxf6", "comment": "White exchanges the bishop for the knight, aiming to weaken black's king."},
+        {"num_move": 29, "white_move": "Ke2", "black_move": "Bc1", "comment": "White centralizes the king in preparation for the endgame."}
+      ]
+    },
+    {
+      "white": "Djukic, Sandra",
+      "moves": [
+        {"num_move": 5, "white_move": "Nf3", "black_move": "O-O", "comment": "White develops the knight, preparing to control the center."},
+        {"num_move": 7, "white_move": "d5", "black_move": "e6", "comment": "White advances the pawn, aiming to create space and open lines."},
+        {"num_move": 10, "white_move": "Nd2", "black_move": "Qa5", "comment": "White prepares to develop pieces actively."},
+        {"num_move": 13, "white_move": "Nxb5", "black_move": "Nxe4", "comment": "White captures the pawn, creating imbalances in the position."},
+        {"num_move": 15, "white_move": "Qd3", "black_move": "Bf5", "comment": "White centralizes the queen, preparing to defend and attack."},
+        {"num_move": 17, "white_move": "e4", "black_move": "Nd7", "comment": "White advances the pawn, creating threats and opening lines."},
+        {"num_move": 20, "white_move": "Rb1", "black_move": "Rd8", "comment": "White places the rook on the open file, preparing to dominate the center."},
+        {"num_move": 22, "white_move": "Rb7", "black_move": "Qg5", "comment": "White places the rook on the 7th rank, creating threats."},
+        {"num_move": 27, "white_move": "Ne3", "black_move": "Qd4", "comment": "White develops the knight to a strong square, aiming for control."},
+        {"num_move": 31, "white_move": "Qg3", "black_move": "Qa1+", "comment": "White places the queen on an active square, creating threats."}
+      ]
+    },
+    {
+      "white": "Doluhanova, Evgeniya",
+      "moves": [
+        {"num_move": 4, "white_move": "d3", "black_move": "c6", "comment": "White develops solidly, preparing to open lines for pieces."},
+        {"num_move": 6, "white_move": "Nh4", "black_move": "Bg4", "comment": "White maneuvers the knight to an aggressive square, aiming for control."},
+        {"num_move": 8, "white_move": "g4", "black_move": "Bg6", "comment": "White advances the pawn aggressively, aiming to disrupt black's pieces."},
+        {"num_move": 9, "white_move": "f4", "black_move": "e6", "comment": "White advances the f-pawn, preparing for a strong kingside attack."},
+        {"num_move": 11, "white_move": "Nxg6", "black_move": "hxg6", "comment": "White exchanges pieces to open the h-file."},
+        {"num_move": 12, "white_move": "Qb3", "black_move": "Bc5", "comment": "White moves the queen to a strong square, creating threats."},
+        {"num_move": 14, "white_move": "d4", "black_move": "cxd4", "comment": "White opens the center, aiming for active play."},
+        {"num_move": 16, "white_move": "Be3", "black_move": "Be7", "comment": "White develops the bishop to a strong square, eyeing the kingside."},
+        {"num_move": 18, "white_move": "f5", "black_move": "exf5", "comment": "White sacrifices the pawn to open lines and create threats."},
+        {"num_move": 20, "white_move": "Qd2", "black_move": "Bd6", "comment": "White centralizes the queen, aiming to create tactical opportunities."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "games": [
+    {
+      "white": "Pogorelskikh, Sofia",
+      "moves": [
+        {"num_move": 4, "white_move": "O-O", "black_move": "Nxe4", "comment": "Early kingside castling by white, initiating rapid development."},
+        {"num_move": 7, "white_move": "Nc3", "black_move": "O-O", "comment": "Black responds with kingside castling, securing the king."},
+        {"num_move": 10, "white_move": "Rxe4", "black_move": "d5", "comment": "White sacrifices the rook to maintain pressure on the center."},
+        {"num_move": 14, "white_move": "Rxe8+", "black_move": "Bxe8", "comment": "White exchanges rooks to weaken black's pawn structure."},
+        {"num_move": 18, "white_move": "Bg3", "black_move": "c6", "comment": "White develops the bishop, aiming for control of the diagonal."},
+        {"num_move": 21, "white_move": "Bf5", "black_move": "Qd8", "comment": "White places the bishop on a strong attacking square."},
+        {"num_move": 26, "white_move": "Bd6", "black_move": "Nh7", "comment": "White aims to dominate the board with the bishop."},
+        {"num_move": 31, "white_move": "Qd1", "black_move": "hxg3", "comment": "Black initiates pawn exchanges to open up lines."},
+        {"num_move": 36, "white_move": "Re1", "black_move": "Re8", "comment": "White centralizes the rook, preparing for potential endgame tactics."},
+        {"num_move": 41, "white_move": "Ke1", "black_move": "Kf7", "comment": "White activates the king in the endgame phase."}
+      ]
+    },
+    {
+      "white": "Kulkarni, Bhakti",
+      "moves": [
+        {"num_move": 8, "white_move": "O-O", "black_move": "Nc6", "comment": "White castles early, focusing on king safety."},
+        {"num_move": 10, "white_move": "Rd1", "black_move": "O-O", "comment": "White places the rook on the open file, preparing for central control."},
+        {"num_move": 12, "white_move": "Bg5", "black_move": "Nbd5", "comment": "White develops the bishop to pin the knight."},
+        {"num_move": 15, "white_move": "bxc3", "black_move": "Bd7", "comment": "White recaptures with the pawn, maintaining a strong center."},
+        {"num_move": 19, "white_move": "Bxe7", "black_move": "Qxe7", "comment": "White exchanges the dark-squared bishops, aiming for simplicity."},
+        {"num_move": 21, "white_move": "Nxc6", "black_move": "bxc6", "comment": "White exchanges knights to disrupt black's pawn structure."},
+        {"num_move": 23, "white_move": "h4", "black_move": "Qf6", "comment": "White advances the pawn to gain space on the kingside."},
+        {"num_move": 26, "white_move": "Rdb1", "black_move": "Rxb3", "comment": "White aims for rook activity on the open file."},
+        {"num_move": 29, "white_move": "Qe4", "black_move": "exd4", "comment": "White centralizes the queen to control key squares."},
+        {"num_move": 33, "white_move": "g4", "black_move": "hxg4", "comment": "White sacrifices the pawn to open lines for attack."}
+      ]
+    },
+    {
+      "white": "Maltsevskaya, Aleksandra",
+      "moves": [
+        {"num_move": 3, "white_move": "exd5", "black_move": "cxd5", "comment": "White captures in the center to open up lines."},
+        {"num_move": 6, "white_move": "Bg5", "black_move": "dxc4", "comment": "White develops the bishop, attacking the knight."},
+        {"num_move": 9, "white_move": "h3", "black_move": "Nc6", "comment": "White advances the pawn to control the g4 square."},
+        {"num_move": 11, "white_move": "O-O", "black_move": "Ne4", "comment": "White castles to secure the king and connect the rooks."},
+        {"num_move": 13, "white_move": "Nh2", "black_move": "Rc8", "comment": "White maneuvers the knight to prepare for a kingside attack."}
+      ]
+    },
+    {
+      "white": "Vujovic, Vera",
+      "moves": [
+        {"num_move": 11, "white_move": "O-O", "black_move": "a5", "comment": "White castles to ensure king safety."},
+        {"num_move": 14, "white_move": "Ng3", "black_move": "Rfd8", "comment": "White maneuvers the knight to an active position."},
+        {"num_move": 18, "white_move": "Nb3", "black_move": "axb4", "comment": "White retreats the knight to prepare for future maneuvers."},
+        {"num_move": 21, "white_move": "Bxc4", "black_move": "Bxc4", "comment": "White exchanges bishops to simplify the position."},
+        {"num_move": 23, "white_move": "Na5", "black_move": "Be6", "comment": "White places the knight on a strong outpost."},
+        {"num_move": 25, "white_move": "cxb5", "black_move": "cxb5", "comment": "White opens the c-file for rook activity."},
+        {"num_move": 26, "white_move": "Nc6", "black_move": "Bxf5", "comment": "White sacrifices the knight for active play."},
+        {"num_move": 31, "white_move": "Rd1", "black_move": "e4", "comment": "White places the rook on the open file to dominate the center."},
+        {"num_move": 36, "white_move": "Qxd3", "black_move": "Rxg4+", "comment": "White captures the pawn, preparing for counterplay."},
+        {"num_move": 38, "white_move": "Ke1", "black_move": "Qh4+", "comment": "White tries to escape the check, but black continues the attack."}
+      ]
+    },
+    {
+      "white": "Mehmed, Elif",
+      "moves": [
+        {"num_move": 6, "white_move": "Be3", "black_move": "Qb4+", "comment": "White develops the bishop, offering a pawn sacrifice."},
+        {"num_move": 8, "white_move": "c3", "black_move": "Qd6", "comment": "White aims to strengthen the center and prepare for development."},
+        {"num_move": 10, "white_move": "Nd4", "black_move": "Nf6", "comment": "White places the knight in the center, controlling key squares."},
+        {"num_move": 12, "white_move": "c4", "black_move": "O-O", "comment": "White aims for a strong pawn structure and piece activity."},
+        {"num_move": 14, "white_move": "Nc3", "black_move": "Nd4", "comment": "White centralizes the knight, preparing for tactics."},
+        {"num_move": 18, "white_move": "Bf4", "black_move": "Qb7", "comment": "White places the bishop on an active diagonal."},
+        {"num_move": 19, "white_move": "Ne7+", "black_move": "Kh8", "comment": "White sacrifices the knight to disrupt black's king position."},
+        {"num_move": 21, "white_move": "e5", "black_move": "Qa4", "comment": "White advances the pawn to open lines for the attack."},
+        {"num_move": 24, "white_move": "Qd3", "black_move": "h5", "comment": "White places the queen in the center to control the board."},
+        {"num_move": 29, "white_move": "Na5", "black_move": "Nb2", "comment": "White positions the knight to support future attacks."}
+      ]
+    }
+  ]
+}

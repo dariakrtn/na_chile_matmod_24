@@ -1,302 +1,219 @@
-[
-    {
-        "game": "Kulkarni, Bhakti vs. Pogorelskikh, Sofia",
-        "moves": [
-            {
-                "num_moves": "5",
-                "white_moves": "O-O",
-                "black_moves": "O-O",
-                "time": "1709391871462",
-                "comment": "Both sides castle early, solidifying their king's safety and preparing for the middlegame."
-            },
-            {
-                "num_moves": "10",
-                "white_moves": "Qxe7",
-                "black_moves": "Re8",
-                "time": "1709395140213",
-                "comment": "White captures the pawn on e7, initiating a queen exchange and pressuring the e-file."
-            },
-            {
-                "num_moves": "15",
-                "white_moves": "Ng5",
-                "black_moves": "Nxg5",
-                "time": "1709399980360",
-                "comment": "White's knight ventures into an aggressive position, which is promptly captured by Black's knight."
-            },
-            {
-                "num_moves": "17",
-                "white_moves": "Bxg5",
-                "black_moves": "Rxe2",
-                "time": "1709400561927",
-                "comment": "White captures the knight on g5, and Black responds with a rook invasion on the e2 square, creating threats."
-            },
-            {
-                "num_moves": "20",
-                "white_moves": "Rac1",
-                "black_moves": "Rxc1",
-                "time": "1709402138577",
-                "comment": "White aligns the rook with the queen on the c-file, Black captures the rook, leading to a series of exchanges."
-            },
-            {
-                "num_moves": "25",
-                "white_moves": "Bxc6",
-                "black_moves": "bxc6",
-                "time": "1709403387472",
-                "comment": "White captures the knight on c6, removing a key defender and opening lines against Black's king."
-            },
-            {
-                "num_moves": "31",
-                "white_moves": "Rd7",
-                "black_moves": "Bc3",
-                "time": "1709403964073",
-                "comment": "White's rook moves to d7, placing more pressure on Black's position."
-            },
-            {
-                "num_moves": "34",
-                "white_moves": "Rb5",
-                "black_moves": "Ra8",
-                "time": "1709404142580",
-                "comment": "White's rook maneuvers to b5 to support advancing passed pawns and control key squares."
-            },
-            {
-                "num_moves": "41",
-                "white_moves": "h4",
-                "black_moves": "Be7",
-                "time": "1709404722689",
-                "comment": "White pushes the h-pawn to weaken Black's kingside pawn structure and create potential for a king side attack."
-            },
-            {
-                "num_moves": "60",
-                "white_moves": "Bf6",
-                "black_moves": "Bg3",
-                "time": "1709408586416",
-                "comment": "White relocates the bishop to f6, aiming to dominate the long diagonal and restrict Black's king movement."
-            }
-        ]
+{
+  "games": [
+    {      
+	"white": "Kulkarni, Bhakti ",
+	"black": "Pogorelskikh, Sofia",
+	"moves": [
+	  {"num_moves": "5", "white_moves": "O-O", "black_moves": "O-O", "comment": "Both sides castle early, solidifying their king's safety and preparing for the middlegame."},
+	  {"num_moves": "10", "white_moves": "Qxe7", "black_moves": "Re8", "comment": "White captures the pawn on e7, initiating a queen exchange and pressuring the e-file."},
+	  {"num_moves": "15", "white_moves": "Ng5", "black_moves": "Nxg5", "comment": "White's knight ventures into an aggressive position, which is promptly captured by Black's knight."},
+	  {"num_moves": "17", "white_moves": "Bxg5", "black_moves": "Rxe2", "comment": "White captures the knight on g5, and Black responds with a rook invasion on the e2 square, creating threats."},
+	  {"num_moves": "20", "white_moves": "Rac1", "black_moves": "Rxc1", "comment": "White aligns the rook with the queen on the c-file, Black captures the rook, leading to a series of exchanges."},
+	  {"num_moves": "25", "white_moves": "Bxc6", "black_moves": "bxc6","comment": "White captures the knight on c6, removing a key defender and opening lines against Black's king."},
+	  {"num_moves": "31", "white_moves": "Rd7", "black_moves": "Bc3", "comment": "White's rook moves to d7, placing more pressure on Black's position."},
+	  {"num_moves": "34", "white_moves": "Rb5", "black_moves": "Ra8", "comment": "White's rook maneuvers to b5 to support advancing passed pawns and control key squares."},
+	  {"num_moves": "41", "white_moves": "h4", "black_moves": "Be7", "comment": "White pushes the h-pawn to weaken Black's kingside pawn structure and create potential for a king side attack."},
+	  {"num_moves": "60", "white_moves": "Bf6", "black_moves": "Bg3", "comment": "White relocates the bishop to f6, aiming to dominate the long diagonal and restrict Black's king movement."}
+	]
     },
-    {
-        "game": "Maltsevskaya, Aleksandra vs. Doluhanova, Evgeniya",
-        "moves": [
+    {      
+	"white": "Maltsevskaya, Aleksandra",
+	"black": "Doluhanova, Evgeniya",
+	"moves": [
             {
                 "num_moves": "5",
                 "white_moves": "Bxc6",
                 "black_moves": "dxc6",
-                "time": "1709391724838",
                 "comment": "White captures on c6 early, opting to damage Black's pawn structure and exchange the bishop for a knight."
             },
             {
                 "num_moves": "7",
                 "white_moves": "O-O",
                 "black_moves": "O-O",
-                "time": "1709392330366",
                 "comment": "Both players castle, leading to a safer king position and the beginning of the middle game."
             },
             {
                 "num_moves": "12",
                 "white_moves": "dxe5",
                 "black_moves": "Bxe5",
-                "time": "1709396163279",
                 "comment": "White opens the center by capturing on e5, aiming to utilize the open lines for attacking potential."
             },
             {
                 "num_moves": "18",
                 "white_moves": "Nxe5",
                 "black_moves": "Qxe5",
-                "time": "1709401893014",
                 "comment": "White sacrifices a knight for dynamic play and opens lines against Black's king."
             },
             {
                 "num_moves": "20",
                 "white_moves": "e5",
                 "black_moves": "Bf5",
-                "time": "1709402250666",
                 "comment": "White pushes e5 to gain space in the center and kick the Black queen, increasing central control."
             },
             {
                 "num_moves": "24",
                 "white_moves": "axb5",
                 "black_moves": "cxb5",
-                "time": "1709403750530",
                 "comment": "White opens the a-file by capturing the pawn on b5, aiming to activate the rook on a3."
             },
             {
                 "num_moves": "26",
                 "white_moves": "f5",
                 "black_moves": "Bb3",
-                "time": "1709403834497",
                 "comment": "White aggressively pushes the f-pawn to f5 to open more lines and create attacking chances on the kingside."
             },
             {
                 "num_moves": "29",
                 "white_moves": "Raxa7",
                 "black_moves": "Rxa7",
-                "time": "1709404073275",
                 "comment": "White doubles rooks on the seventh rank, a typical tactic to increase pressure in the opponent's camp."
             },
             {
                 "num_moves": "31",
                 "white_moves": "Ra8+",
                 "black_moves": "Nf8",
-                "time": "1709404150623",
                 "comment": "White checks on the eighth rank, aiming to weaken Black's defense around the king."
             },
             {
                 "num_moves": "37",
                 "white_moves": "Nd5",
                 "black_moves": "Rd8",
-                "time": "1709404522915",
                 "comment": "White relocates the knight to a strong central position, threatening to enter into Black's position."
             }
         ]
-    },
-    {
-        "game": "Vujovic, Vera vs. Djukic, Sandra",
-        "moves": [
+   },
+   {
+   	"white": "Vujovic, Vera",
+	"black": "Djukic, Sandra",
+	"moves": [
             {
                 "num_moves": "5",
                 "white_moves": "Qxd8+",
                 "black_moves": "Kxd8",
-                "time": "1709391668000",
                 "comment": "White decides to trade queens early, pulling the black king out of safety and into the center."
             },
             {
                 "num_moves": "8",
                 "white_moves": "O-O-O",
                 "black_moves": "Bg4",
-                "time": "1709393537206",
                 "comment": "White castles queenside, accelerating the game towards a clash on opposite wings."
             },
             {
                 "num_moves": "12",
                 "white_moves": "Bxg4+",
                 "black_moves": "Nexg4",
-                "time": "1709398610650",
                 "comment": "White captures the knight on g4 with the bishop, initiating complex tactical sequences."
             },
             {
                 "num_moves": "15",
                 "white_moves": "Rxf4",
                 "black_moves": "Nxg2",
-                "time": "1709400261036",
                 "comment": "White captures back on f4, leading to dynamic possibilities in the center and near Black's king."
             },
             {
                 "num_moves": "20",
                 "white_moves": "Rxf6",
                 "black_moves": "b5",
-                "time": "1709401869804",
                 "comment": "White captures on f6 with the rook, creating threats against the exposed black king."
             },
             {
                 "num_moves": "24",
                 "white_moves": "Rxh7",
                 "black_moves": "Kb7",
-                "time": "1709402225233",
                 "comment": "White's rook invades into Black's position, targeting the h7-pawn and increasing pressure."
             },
             {
                 "num_moves": "28",
                 "white_moves": "h4",
                 "black_moves": "Rh8",
-                "time": "1709402581293",
                 "comment": "White pushes the h-pawn, aiming to open lines on the kingside for the rooks."
             },
             {
                 "num_moves": "32",
                 "white_moves": "Re7",
                 "black_moves": "Bf4+",
-                "time": "1709402860011",
                 "comment": "White's rook moves to e7, threatening deeper penetration into Black's position."
             },
             {
                 "num_moves": "34",
                 "white_moves": "Rxe6+",
                 "black_moves": "",
-                "time": "1709402932721",
                 "comment": "White sacrifices the rook for tactical opportunities against Black's weakened king position."
             },
             {
                 "num_moves": "40",
                 "white_moves": "Rd1",
                 "black_moves": "Rxd5",
-                "time": "1709403799035",
                 "comment": "White aligns the rook with Black's queen, introducing threats of simplification in a favorable endgame."
             }
         ]
-    },
-    {
-        "game": "Mehmed, Elif vs. Kubicka, Anna",
-        "moves": [
+
+   },
+   {
+   	"white": "Mehmed, Elif",
+	"black": "Kubicka, Anna1",
+	"moves": [
             {
                 "num_moves": "5",
                 "white_moves": "Nxc6",
                 "black_moves": "Qf6",
-                "time": "1709391777049",
                 "comment": "White captures the knight on c6, doubling Black's pawns and gaining structural advantage."
             },
             {
                 "num_moves": "7",
                 "white_moves": "gxf3",
                 "black_moves": "dxc6",
-                "time": "1709391844977",
                 "comment": "White decides to simplify the position by trading queens and capturing back on f3, solidifying the kingside."
             },
             {
                 "num_moves": "9",
                 "white_moves": "fxe3",
                 "black_moves": "Be6",
-                "time": "1709392907610",
                 "comment": "White resolves the tension in the center, opting for a pawn structure that supports future central expansion."
             },
             {
                 "num_moves": "12",
                 "white_moves": "Rg1",
                 "black_moves": "O-O",
-                "time": "1709394639798",
                 "comment": "White prepares for kingside activity by positioning the rook on the g-file, signaling aggressive intentions."
             },
             {
                 "num_moves": "14",
                 "white_moves": "Rg5",
                 "black_moves": "h6",
-                "time": "1709396088677",
                 "comment": "White intensifies the pressure on the kingside, challenging Black to defend the pawn structure."
             },
             {
                 "num_moves": "18",
                 "white_moves": "b3",
                 "black_moves": "b6",
-                "time": "1709398559571",
                 "comment": "White solidifies the queenside pawns, preparing for a long-term battle over the center and opposite flanks."
             },
             {
                 "num_moves": "22",
                 "white_moves": "f4",
                 "black_moves": "Rd6",
-                "time": "1709399813631",
                 "comment": "White pushes the f-pawn, opening up lines for the bishop and queen to potentially target Black's king."
             },
             {
                 "num_moves": "27",
                 "white_moves": "Rg6",
                 "black_moves": "Nb4",
-                "time": "1709402072656",
                 "comment": "White's rook moves to g6, increasing the pressure on Black's position and threatening to penetrate further."
             },
             {
                 "num_moves": "34",
                 "white_moves": "e5",
                 "black_moves": "Rf7",
-                "time": "1709403935160",
                 "comment": "White advances the central pawn to e5, aiming to break through Black's defenses and create new weaknesses."
             },
             {
                 "num_moves": "43",
                 "white_moves": "axb5+",
                 "black_moves": "axb5",
-                "time": "1709405446529",
                 "comment": "White opens the a-file with a pawn sacrifice, trying to activate the rook and penetrate Black's queenside."
             }
         ]
     }
-]
+
+}

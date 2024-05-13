@@ -1,103 +1,83 @@
 {
   "games": [
     {
-      "event": "55th INTERNATIONAL LADIES' GRANDMASTER TOURNAMENT",
-      "date": "2024.03.02",
-      "round": "4",
       "white": "Pogorelskikh, Sofia",
       "black": "Kubicka, Anna",
-      "result": "0-1",
-      "notable_moves": [
-        {"num_moves": 6, "white_moves": "O-O", "black_moves": "g6", "time": 1709649454809, "comment": "White castles kingside for safety."},
-        {"num_moves": 9, "white_moves": "dxe5", "black_moves": "dxe5", "time": 1709649717868, "comment": "White opens the center, changing the pawn structure."},
-        {"num_moves": 10, "white_moves": "Be3", "black_moves": "O-O", "time": 1709650083076, "comment": "Black castles kingside, mirroring White."},
-        {"num_moves": 16, "white_moves": "N3h2", "black_moves": "f5", "time": 1709653554481, "comment": "Black pushes f-pawn, initiating a kingside attack."},
-        {"num_moves": 17, "white_moves": "exf5", "black_moves": "Nxf5", "time": 1709653945648, "comment": "White sacrifices a pawn to open lines."},
-        {"num_moves": 18, "white_moves": "Ng3", "black_moves": "Nxg3", "time": 1709655909689, "comment": "Black captures on g3, continuing the attack."},
-        {"num_moves": 22, "white_moves": "Nd2", "black_moves": "Rf7", "time": 1709658401373, "comment": "Black prepares to double rooks on the f-file."},
+      "moves": [
+        {"num_moves": 6, "white_moves": "O-O", "black_moves": "g6", "comment": "White castles kingside for safety."},
+        {"num_moves": 9, "white_moves": "dxe5", "black_moves": "dxe5", "comment": "White opens the center, changing the pawn structure."},
+        {"num_moves": 10, "white_moves": "Be3", "black_moves": "O-O", "comment": "Black castles kingside, mirroring White."},
+        {"num_moves": 16, "white_moves": "N3h2", "black_moves": "f5", "comment": "Black pushes f-pawn, initiating a kingside attack."},
+        {"num_moves": 17, "white_moves": "exf5", "black_moves": "Nxf5", "comment": "White sacrifices a pawn to open lines."},
+        {"num_moves": 18, "white_moves": "Ng3", "black_moves": "Nxg3", "comment": "Black captures on g3, continuing the attack."},
+        {"num_moves": 22, "white_moves": "Nd2", "black_moves": "Rf7", "comment": "Black prepares to double rooks on the f-file."},
         {"num_moves": 30, "white_moves": "Qa2", "black_moves": "Nf2+", "time": 1709660818505, "comment": "Black forks king and queen, gaining material."},
         {"num_moves": 31, "white_moves": "Kh2", "black_moves": "Be5+", "time": 1709661039723, "comment": "Black checks the king, increasing pressure."},
         {"num_moves": 41, "white_moves": "Rxe2", "black_moves": "Qxe2", "time": 1709662830766, "comment": "Decisive queen sacrifice leading to checkmate threat."}
       ]
     },
     {
-      "event": "55th INTERNATIONAL LADIES' GRANDMASTER TOURNAMENT",
-      "date": "2024.03.02",
-      "round": "4",
       "white": "Djukic, Sandra",
       "black": "Xu, Yuanyuan",
-      "result": "1-0",
-      "notable_moves": [
-        {"num_moves": 4, "white_moves": "cxd5", "black_moves": "exd5", "time": 1709649715364, "comment": "White plays Queen's Gambit Accepted."},
-        {"num_moves": 7, "white_moves": "O-O", "black_moves": "Be6", "time": 1709649979224, "comment": "White castles kingside."},
-        {"num_moves": 10, "white_moves": "Bb2", "black_moves": "cxd4", "time": 1709652762658, "comment": "White develops bishop to control long diagonal."},
-        {"num_moves": 11, "white_moves": "Nxd4", "black_moves": "Nxd4", "time": 1709653247612, "comment": "Exchange of knights in the center."},
-        {"num_moves": 17, "white_moves": "Rc1", "black_moves": "h5", "time": 1709657579011, "comment": "White places rook on open c-file."},
-        {"num_moves": 21, "white_moves": "Rxc5", "black_moves": "Rxc5", "time": 1709659073760, "comment": "White captures rook, prompting exchanges."},
-        {"num_moves": 23, "white_moves": "Qxc5", "black_moves": "Rc8", "time": 1709659193131, "comment": "White captures pawn on c5, increasing material advantage."},
-        {"num_moves": 27, "white_moves": "Qxd5+", "black_moves": "Nf7", "time": 1709660113617, "comment": "White checks with queen, adding pressure."},
-        {"num_moves": 31, "white_moves": "a4", "black_moves": "Be6", "time": 1709660823843, "comment": "White pushes a4, aiming to create passed pawn."},
-        {"num_moves": 38, "white_moves": "Rc8+", "black_moves": "Kh7", "time": 1709661696103, "comment": "White checks king and takes control of seventh rank."}
+      "moves": [
+        {"num_moves": 4, "white_moves": "cxd5", "black_moves": "exd5", "comment": "White plays Queen's Gambit Accepted."},
+        {"num_moves": 7, "white_moves": "O-O", "black_moves": "Be6", "comment": "White castles kingside."},
+        {"num_moves": 10, "white_moves": "Bb2", "black_moves": "cxd4", "comment": "White develops bishop to control long diagonal."},
+        {"num_moves": 11, "white_moves": "Nxd4", "black_moves": "Nxd4", "comment": "Exchange of knights in the center."},
+        {"num_moves": 17, "white_moves": "Rc1", "black_moves": "h5", "comment": "White places rook on open c-file."},
+        {"num_moves": 21, "white_moves": "Rxc5", "black_moves": "Rxc5", "comment": "White captures rook, prompting exchanges."},
+        {"num_moves": 23, "white_moves": "Qxc5", "black_moves": "Rc8", "comment": "White captures pawn on c5, increasing material advantage."},
+        {"num_moves": 27, "white_moves": "Qxd5+", "black_moves": "Nf7", "comment": "White checks with queen, adding pressure."},
+        {"num_moves": 31, "white_moves": "a4", "black_moves": "Be6", "comment": "White pushes a4, aiming to create passed pawn."},
+        {"num_moves": 38, "white_moves": "Rc8+", "black_moves": "Kh7", "comment": "White checks king and takes control of seventh rank."}
       ]
     },
     {
-      "event": "55th INTERNATIONAL LADIES' GRANDMASTER TOURNAMENT",
-      "date": "2024.03.02",
-      "round": "4",
       "white": "Doluhanova, Evgeniya",
       "black": "Lu, Miaoyi",
-      "result": "0-1",
-      "notable_moves": [
-        {"num_moves": 7, "white_moves": "O-O", "black_moves": "a6", "time": 1709650060592, "comment": "White castles kingside for safety."},
-        {"num_moves": 10, "white_moves": "a4", "black_moves": "cxd4", "time": 1709651204796, "comment": "White pushes a4 for queen-side expansion."},
-        {"num_moves": 11, "white_moves": "axb5", "black_moves": "dxc3", "time": 1709652285917, "comment": "White sacrifices a pawn on b5 for open lines."},
-        {"num_moves": 12, "white_moves": "bxc6", "black_moves": "Qxd1", "time": 1709652738300, "comment": "White captures c6, leading to queen exchange."},
-        {"num_moves": 16, "white_moves": "Ba4", "black_moves": "O-O-O", "time": 1709654430109, "comment": "White moves bishop to a4, targeting king."},
-        {"num_moves": 20, "white_moves": "f3", "black_moves": "Rhd8", "time": 1709656317852, "comment": "White plays f3 to solidify position."},
-        {"num_moves": 22, "white_moves": "Ra5", "black_moves": "g6", "time": 1709657473502, "comment": "White activates rook on fifth rank."},
-        {"num_moves": 26, "white_moves": "Ne2", "black_moves": "f6", "time": 1709659722123, "comment": "White repositions knight for better control."},
-        {"num_moves": 28, "white_moves": "c5", "black_moves": "Bc7", "time": 1709660470959, "comment": "White advances c-pawn, challenging Black's structure."},
-        {"num_moves": 33, "white_moves": "Rc1", "black_moves": "Kb7", "time": 1709661545317, "comment": "White doubles on the c-file, increasing pressure."}
+      "moves": [
+        {"num_moves": 7, "white_moves": "O-O", "black_moves": "a6", "comment": "White castles kingside for safety."},
+        {"num_moves": 10, "white_moves": "a4", "black_moves": "cxd4", "comment": "White pushes a4 for queen-side expansion."},
+        {"num_moves": 11, "white_moves": "axb5", "black_moves": "dxc3", "comment": "White sacrifices a pawn on b5 for open lines."},
+        {"num_moves": 12, "white_moves": "bxc6", "black_moves": "Qxd1", "comment": "White captures c6, leading to queen exchange."},
+        {"num_moves": 16, "white_moves": "Ba4", "black_moves": "O-O-O", "comment": "White moves bishop to a4, targeting king."},
+        {"num_moves": 20, "white_moves": "f3", "black_moves": "Rhd8", "comment": "White plays f3 to solidify position."},
+        {"num_moves": 22, "white_moves": "Ra5", "black_moves": "g6", "comment": "White activates rook on fifth rank."},
+        {"num_moves": 26, "white_moves": "Ne2", "black_moves": "f6", "comment": "White repositions knight for better control."},
+        {"num_moves": 28, "white_moves": "c5", "black_moves": "Bc7", "comment": "White advances c-pawn, challenging Black's structure."},
+        {"num_moves": 33, "white_moves": "Rc1", "black_moves": "Kb7", "comment": "White doubles on the c-file, increasing pressure."}
       ]
     },
     {
-      "event": "55th INTERNATIONAL LADIES' GRANDMASTER TOURNAMENT",
-      "date": "2024.03.02",
-      "round": "4",
       "white": "Kulkarni, Bhakti",
       "black": "Mehmed, Elif",
-      "result": "0-1",
-      "notable_moves": [
-        {"num_moves": 4, "white_moves": "O-O", "black_moves": "Bg4", "time": 1709649279524, "comment": "White castles for early safety."},
-        {"num_moves": 8, "white_moves": "cxd5", "black_moves": "exd5", "time": 1709650254677, "comment": "White opens the center with pawn capture."},
-        {"num_moves": 11, "white_moves": "Nh4", "black_moves": "Bg6", "time": 1709650876544, "comment": "White repositions knight towards kingside."},
-        {"num_moves": 13, "white_moves": "f4", "black_moves": "Bc2", "time": 1709651943077, "comment": "White pushes f4 to increase central control."},
-        {"num_moves": 16, "white_moves": "Bxe4", "black_moves": "dxe4", "time": 1709653494127, "comment": "White captures central pawn to challenge structure."},
-        {"num_moves": 20, "white_moves": "Nh6", "black_moves": "f5", "time": 1709656209662, "comment": "Knight moves to h6, posing threats to Black's king."},
-        {"num_moves": 26, "white_moves": "gxf5", "black_moves": "gxf5", "time": 1709658516205, "comment": "White opens kingside with pawn break."},
-        {"num_moves": 30, "white_moves": "Qd1", "black_moves": "Bxa3", "time": 1709659711718, "comment": "White repositions queen, eyeing exposed pawn."},
-        {"num_moves": 34, "white_moves": "Ng8", "black_moves": "Kb6", "time": 1709661012732, "comment": "Knight infiltrates into Black's position, increasing threats."},
-        {"num_moves": 37, "white_moves": "d5", "black_moves": "Nc5", "time": 1709661597733, "comment": "White advances d-pawn, seeking central control."}
+      "moves": [
+        {"num_moves": 4, "white_moves": "O-O", "black_moves": "Bg4", "comment": "White castles for early safety."},
+        {"num_moves": 8, "white_moves": "cxd5", "black_moves": "exd5", "comment": "White opens the center with pawn capture."},
+        {"num_moves": 11, "white_moves": "Nh4", "black_moves": "Bg6", "comment": "White repositions knight towards kingside."},
+        {"num_moves": 13, "white_moves": "f4", "black_moves": "Bc2", "comment": "White pushes f4 to increase central control."},
+        {"num_moves": 16, "white_moves": "Bxe4", "black_moves": "dxe4", "comment": "White captures central pawn to challenge structure."},
+        {"num_moves": 20, "white_moves": "Nh6", "black_moves": "f5", "comment": "Knight moves to h6, posing threats to Black's king."},
+        {"num_moves": 26, "white_moves": "gxf5", "black_moves": "gxf5", "comment": "White opens kingside with pawn break."},
+        {"num_moves": 30, "white_moves": "Qd1", "black_moves": "Bxa3", "comment": "White repositions queen, eyeing exposed pawn."},
+        {"num_moves": 34, "white_moves": "Ng8", "black_moves": "Kb6", "comment": "Knight infiltrates into Black's position, increasing threats."},
+        {"num_moves": 37, "white_moves": "d5", "black_moves": "Nc5", "comment": "White advances d-pawn, seeking central control."}
       ]
     },
     {
-      "event": "55th INTERNATIONAL LADIES' GRANDMASTER TOURNAMENT",
-      "date": "2024.03.02",
-      "round": "4",
       "white": "Maltsevskaya, Aleksandra",
       "black": "Vujovic, Vera",
-      "result": "1-0",
-      "notable_moves": [
-        {"num_moves": 5, "white_moves": "d3", "black_moves": "Nbd7", "time": 1709649204529, "comment": "White opts for a solid center with d3."},
-        {"num_moves": 7, "white_moves": "Qe1", "black_moves": "e5", "time": 1709649251332, "comment": "White prepares for kingside activity with Qe1."},
-        {"num_moves": 10, "white_moves": "Nh4", "black_moves": "O-O-O", "time": 1709650038941, "comment": "Knight repositions to h4, targeting f5/g6."},
-        {"num_moves": 14, "white_moves": "Nf5", "black_moves": "Bg6", "time": 1709654333930, "comment": "Knight advances to f5, pressuring Black's position."},
-        {"num_moves": 18, "white_moves": "a5", "black_moves": "c5", "time": 1709656408841, "comment": "White expands on the queenside with a5."},
-        {"num_moves": 21, "white_moves": "b6", "black_moves": "Qe7", "time": 1709657080245, "comment": "White creates pawn wedge on b6, cramping Black."},
-        {"num_moves": 22, "white_moves": "a6", "black_moves": "Nxg2", "time": 1709657746155, "comment": "a6 push followed by knight sac, opening lines."},
-        {"num_moves": 24, "white_moves": "bxa7+", "black_moves": "Ka8", "time": 1709658321005, "comment": "White checks by capturing on a7, opening attack paths."},
-        {"num_moves": 28, "white_moves": "axb7+", "black_moves": "Rxb7", "time": 1709658871431, "comment": "a-pawn sac disrupts Black's pawn structure."},
-        {"num_moves": 30, "white_moves": "a8=Q+", "black_moves": "", "time": 1709658905263, "comment": "White promotes to queen, checking and gaining material."}
+      "moves": [
+        {"num_moves": 5, "white_moves": "d3", "black_moves": "Nbd7", "comment": "White opts for a solid center with d3."},
+        {"num_moves": 7, "white_moves": "Qe1", "black_moves": "e5", "comment": "White prepares for kingside activity with Qe1."},
+        {"num_moves": 10, "white_moves": "Nh4", "black_moves": "O-O-O", "comment": "Knight repositions to h4, targeting f5/g6."},
+        {"num_moves": 14, "white_moves": "Nf5", "black_moves": "Bg6", "comment": "Knight advances to f5, pressuring Black's position."},
+        {"num_moves": 18, "white_moves": "a5", "black_moves": "c5", "comment": "White expands on the queenside with a5."},
+        {"num_moves": 21, "white_moves": "b6", "black_moves": "Qe7", "comment": "White creates pawn wedge on b6, cramping Black."},
+        {"num_moves": 22, "white_moves": "a6", "black_moves": "Nxg2", "comment": "a6 push followed by knight sac, opening lines."},
+        {"num_moves": 24, "white_moves": "bxa7+", "black_moves": "Ka8", "comment": "White checks by capturing on a7, opening attack paths."},
+        {"num_moves": 28, "white_moves": "axb7+", "black_moves": "Rxb7", "comment": "a-pawn sac disrupts Black's pawn structure."},
+        {"num_moves": 30, "white_moves": "a8=Q+", "black_moves": "", "comment": "White promotes to queen, checking and gaining material."}
       ]
     }
   ]

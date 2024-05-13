@@ -1,0 +1,72 @@
+{
+  "games": [
+    {
+      "white": "Pogorelskikh, Sofia",
+      "moves": [
+        {"num_move": 7, "white_move": "Bd3", "black_move": "O-O", "comment": "Black castles, securing king safety."},
+        {"num_move": 11, "white_move": "O-O-O", "black_move": "Nf8", "comment": "White castles long, opposing black's king side."},
+        {"num_move": 19, "white_move": "Bxb5", "black_move": "Bxc5", "comment": "White captures a key pawn, opening lines for attack."},
+        {"num_move": 21, "white_move": "Bxe8", "black_move": "Qxe8", "comment": "White exchanges rook for knight, gaining positional advantage."},
+        {"num_move": 24, "white_move": "Qxa7", "black_move": "Rc7", "comment": "White makes a strong queen side attack with queen capture."},
+        {"num_move": 25, "white_move": "Qa4", "black_move": "Rxc3", "comment": "Black attempts to counter by taking knight."},
+        {"num_move": 30, "white_move": "a5", "black_move": "Nxd4", "comment": "White pushes pawn, disrupting black's pawn structure."},
+        {"num_move": 39, "white_move": "Qe7", "black_move": "Qf5", "comment": "White checks, forcing black to defend."},
+        {"num_move": 41, "white_move": "Rc8", "black_move": "Qh5", "comment": "White rook moves to critical rank, threatening mate."},
+        {"num_move": 45, "white_move": "Qf8+", "black_move": "", "comment": "White delivers checkmate."}
+      ]
+    },
+    {
+      "white": "Kulkarni, Bhakti",
+      "moves": [
+        {"num_move": 10, "white_move": "O-O", "black_move": "Bb7", "comment": "Both sides castle, stabilizing their positions."},
+        {"num_move": 16, "white_move": "Bh2", "black_move": "g6", "comment": "White repositions bishop to support central pawns."},
+        {"num_move": 20, "white_move": "bxc5", "black_move": "Bh6", "comment": "White captures central pawn, aiming to open up the center."},
+        {"num_move": 25, "white_move": "Ne5", "black_move": "Rxd6", "comment": "White's knight move intensifies pressure in the center."},
+        {"num_move": 31, "white_move": "Qc5", "black_move": "Rd8", "comment": "White's queen invasion threatens further penetration."},
+        {"num_move": 36, "white_move": "Nxg6", "black_move": "Nd5", "comment": "White sacrifices knight to disrupt black's pawn structure."},
+        {"num_move": 40, "white_move": "Rb2", "black_move": "Ra6", "comment": "White aligns rook with the back rank, targeting weaknesses."},
+        {"num_move": 43, "white_move": "Nb8", "black_move": "Ra8", "comment": "White redeploys knight to bolster defense."},
+        {"num_move": 45, "white_move": "Rc4", "black_move": "Kh6", "comment": "White centralizes rook, adding pressure."},
+        {"num_move": 47, "white_move": "exf6+", "black_move": "Kxf6", "comment": "White checks, leading to a pawn capture."}
+      ]
+    },
+    {
+      "white": "Vujovic, Vera",
+      "moves": [
+        {"num_move": 8, "white_move": "Nd5", "black_move": "Nxe4", "comment": "White advances knight aggressively in center."},
+        {"num_move": 11, "white_move": "Bc6", "black_move": "Bb7", "comment": "White's bishop takes control of long diagonal."},
+        {"num_move": 13, "white_move": "Nc7+", "black_move": "Kd8", "comment": "White's knight fork attacks king and rook."},
+        {"num_move": 15, "white_move": "Nxa6+", "black_move": "Nxb6", "comment": "White captures pawn, winning material."},
+        {"num_move": 18, "white_move": "Bxb7", "black_move": "Kxb7", "comment": "White exchanges bishop for control."},
+        {"num_move": 22, "white_move": "c4", "black_move": "Qc8", "comment": "White pushes central pawn to expand influence."},
+        {"num_move": 25, "white_move": "Rc1", "black_move": "e4", "comment": "White moves rook to open file, increasing activity."},
+        {"num_move": 27, "white_move": "Nxc5+", "black_move": "Qxc5", "comment": "White captures knight, aiming for material gain."},
+        {"num_move": 32, "white_move": "Nb3", "black_move": "Qb4+", "comment": "White repositions knight for defense."},
+        {"num_move": 40, "white_move": "Qg8+", "black_move": "Ke7", "comment": "White checks, gaining a positional edge."}
+      ]
+    },
+    {
+      "white": "Doluhanova, Evgeniya",
+      "moves": [
+        {"num_move": 10, "white_move": "Nd5", "black_move": "Be6", "comment": "White places knight at strong central post."},
+        {"num_move": 16, "white_move": "Bc3", "black_move": "Rac8", "comment": "White's bishop targets the long diagonal."},
+        {"num_move": 22, "white_move": "Bd4", "black_move": "Qa5", "comment": "White bishop controls key squares, increasing central control."},
+        {"num_move": 25, "white_move": "Bc3", "black_move": "Qc7", "comment": "White repositions bishop to maintain pressure."},
+        {"num_move": 28, "white_move": "Nf4", "black_move": "b4", "comment": "White advances knight, challenging black's pawn structure."},
+        {"num_move": 29, "white_move": "Bxg7", "black_move": "Nxf4", "comment": "White captures bishop, gaining material advantage."},
+        {"num_move": 32, "white_move": "bxc3", "black_move": "bxc3", "comment": "White captures pawn, clearing the way for further advancement."},
+        {"num_move": 34, "white_move": "Rd3", "black_move": "c2", "comment": "White aligns rook with the c-file, targeting the passed pawn."},
+        {"num_move": 38, "white_move": "Qf1", "black_move": "Qxf1+", "comment": "White exchanges queens, heading towards endgame."},
+        {"num_move": 40, "white_move": "e5", "black_move": "Nb5", "comment": "White pushes central pawn, opening lines for attack."}
+      ]
+    },
+    {
+      "white": "Maltsevskaya, Aleksandra",
+      "moves": [
+        {"num_move": 4, "white_move": "O-O", "black_move": "Bg7", "comment": "White castles, ensuring king safety."},
+        {"num_move": 8, "white_move": "Bxc6", "black_move": "Nxc6", "comment": "White exchanges bishop for knight, disrupting black's pawn structure."},
+        {"num_move": 10, "white_move": "Re2", "black_move": "h5", "comment": "White repositions rook, preparing for potential open lines."}
+      ]
+    }
+  ]
+}

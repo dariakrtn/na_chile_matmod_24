@@ -1,5 +1,6 @@
 from openai import OpenAI
-
+import json
+from pathlib import Path
 
 def pgn_to_str(pgn_path):
     with open(pgn_path) as pgn:
@@ -7,7 +8,7 @@ def pgn_to_str(pgn_path):
     return pgn_str
 
 
-path = 'C:/Users/Kirill/Documents/Ahackaton/Belgrade2024/Round_7.pgn.pgn'
+path = Path('C:/Users/Kirill/Documents/Ahackaton/Belgrade2024/Round_9.pgn.pgn')
 
 client = OpenAI(
     api_key="sk-TnXDNlNp0tVnEuVI18883U3vrnCKTdpu",
@@ -15,7 +16,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="gpt-4-turbo",
+    model="gpt-3.5-turbo-1106",
     response_format={"type": "json_object"},
     messages=[
         {"role": "system", "content": """Ты шахматный комментатор. Я нанял тебя чтобы ты рассказал кратко про партию. После того как ты это сделаешь тебя ждет вознаграждение.
@@ -28,7 +29,7 @@ JSON пришли текстом
 {"games":
 [
 { "white": Name player white,
-  "moves":[{"white_move": move white, "black_move": move black, "comment": comment for move}
+  "moves":[{"num_move": number of move, "white_move": move white, "black_move": move black, "comment": comment for move}
 #second_game
 { "white": Name player white, #first_game
   "moves":[{"num_move": number of move, "white_move": move white(откуда и куда пошла фигура), "black_move": move black(откуда и куда пошла фигура), "comment": comment for move}
@@ -36,11 +37,13 @@ JSON пришли текстом
 ...
 #last game
 { "white": Name player white, #first_game
-  "moves":[{"white_move": move white(откуда и куда пошла фигура), "black_move": move black(откуда и куда пошла фигура), "comment": comment for move}
+  "moves":[{"num_move": number of move, "white_move": move white(откуда и куда пошла фигура), "black_move": move black(откуда и куда пошла фигура), "comment": comment for move}
 }
 ]}
 """},
         {"role": "user", "content": pgn_to_str(path)}
     ]
 )
-print(response.choices[0].message.content)
+res_json = json.loads(response.choices[0].message.content)
+with open(str(path.parents[0].absolute()) + f"\\{path.name.split('.')[0]}.json", "w") as file:
+    json.dump(res_json, file)
