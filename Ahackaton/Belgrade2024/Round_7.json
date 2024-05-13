@@ -1,0 +1,76 @@
+{
+  "games": [
+    {
+      "white": "Pogorelskikh, Sofia",
+      "moves": [
+        {"num_move": 4, "white_move": "O-O", "black_move": "Nxe4", "comment": "White castles, offering a tactical battle with the knight capture on e4."},
+        {"num_move": 7, "white_move": "Nc3", "black_move": "O-O", "comment": "Both sides have completed their kingside castling."},
+        {"num_move": 9, "white_move": "Nxe4", "black_move": "Nxe4", "comment": "Exchange of knights on e4, opening up the center."},
+        {"num_move": 10, "white_move": "Rxe4", "black_move": "d5", "comment": "White focuses on central control by recapturing on e4."},
+        {"num_move": 14, "white_move": "Rxe8+", "black_move": "Bxe8", "comment": "Rook exchange to simplify into an endgame."},
+        {"num_move": 20, "white_move": "Nxd7", "black_move": "Qxd7", "comment": "White sacrifices the knight for a positional advantage."},
+        {"num_move": 21, "white_move": "Bf5", "black_move": "Qd8", "comment": "Bishop moves to f5, threatening to capture on d7."},
+        {"num_move": 24, "white_move": "Qa3", "black_move": "h5", "comment": "White positions the queen on a3, eyeing the black king."},
+        {"num_move": 31, "white_move": "Qd1", "black_move": "hxg3", "comment": "Black goes for a pawn sacrifice, aiming to weaken White's kingside."},
+        {"num_move": 37, "white_move": "Rxe8", "black_move": "Qxe8", "comment": "Endgame transition with the exchange of rooks."},
+        {"num_move": 40, "white_move": "Qd3", "black_move": "a6", "comment": "White queen repositions to d3, aiming at the kingside."}
+      ]
+    },
+    {
+      "white": "Kulkarni, Bhakti",
+      "moves": [
+        {"num_move": 8, "white_move": "O-O", "black_move": "Nc6", "comment": "Castling completed by White, Black continues development."},
+        {"num_move": 10, "white_move": "Rd1", "black_move": "O-O", "comment": "Both players castle, setting the stage for the middlegame."},
+        {"num_move": 14, "white_move": "Bh4", "black_move": "Nxc3", "comment": "Knight exchange initiated by Black, White captures with pawn."},
+        {"num_move": 18, "white_move": "Ne5", "black_move": "Nd5", "comment": "White repositions the knight to e5, centralizing."},
+        {"num_move": 20, "white_move": "Bc2", "black_move": "Qg5", "comment": "White's bishop moves to c2 to support the center."},
+        {"num_move": 21, "white_move": "Nxc6", "black_move": "bxc6", "comment": "White captures on c6, damaging Black's pawn structure."},
+        {"num_move": 22, "white_move": "g3", "black_move": "g6", "comment": "White plays g3, preparing to strengthen the kingside."},
+        {"num_move": 24, "white_move": "Qd3", "black_move": "h5", "comment": "White's queen moves to d3, controlling more central squares."},
+        {"num_move": 27, "white_move": "Rdb1", "black_move": "Rxb3", "comment": "Rooks are exchanged on the b-file, altering the pawn structure."},
+        {"num_move": 33, "white_move": "g4", "black_move": "hxg4", "comment": "Pawn tension on the kingside leads to exchanges."}
+      ]
+    },
+    {
+      "white": "Maltsevskaya, Aleksandra",
+      "moves": [
+        {"num_move": 6, "white_move": "Bg5", "black_move": "dxc4", "comment": "White develops bishop, pinning the knight while Black captures pawn."},
+        {"num_move": 7, "white_move": "Bxc4", "black_move": "Bg7", "comment": "White recaptures the pawn on c4, maintaining central pressure."},
+        {"num_move": 9, "white_move": "h3", "black_move": "Nc6", "comment": "White makes a luft for the king, avoiding back-rank issues."},
+        {"num_move": 11, "white_move": "O-O", "black_move": "Ne4", "comment": "Castling by White; Black knight jumps into e4, increasing activity."},
+        {"num_move": 12, "white_move": "Be3", "black_move": "Rc8", "comment": "White's bishop retreats to e3, Black rook moves to the open file."},
+        {"num_move": 13, "white_move": "Nh2", "black_move": "Qa5", "comment": "White repositions knight, Black queen becomes active on a5."}
+      ]
+    },
+    {
+      "white": "Vujovic, Vera",
+      "moves": [
+        {"num_move": 5, "white_move": "dxe4", "black_move": "e5", "comment": "Center pawns exchanged, opening lines."},
+        {"num_move": 8, "white_move": "h3", "black_move": "Be6", "comment": "White makes luft, Black develops bishop to e6."},
+        {"num_move": 10, "white_move": "b4", "black_move": "b5", "comment": "Pawn push on both sides, creating tension on the queenside."},
+        {"num_move": 14, "white_move": "Ng3", "black_move": "Rfd8", "comment": "Knight moves to g3, aiming for kingside activity."},
+        {"num_move": 17, "white_move": "Nd2", "black_move": "Nb6", "comment": "White repositions knight, aiming for c4 square."},
+        {"num_move": 22, "white_move": "Nf5", "black_move": "Bf8", "comment": "Knight moves to f5, creating threats near Black's king."},
+        {"num_move": 24, "white_move": "c4", "black_move": "Qd7", "comment": "White advances the c-pawn, adding central tension."},
+        {"num_move": 30, "white_move": "Qe2", "black_move": "Nd3", "comment": "White's queen moves, addressing the advanced Black knight."},
+        {"num_move": 34, "white_move": "Kh1", "black_move": "Qxh3+", "comment": "Black delivers a check, creating threats against White's king."},
+        {"num_move": 38, "white_move": "Ke1", "black_move": "Qh4+", "comment": "White's king moves, avoiding checkmate threat."}
+      ]
+    },
+    {
+      "white": "Mehmed, Elif",
+      "moves": [
+        {"num_move": 4, "white_move": "Nxd4", "black_move": "Qb6", "comment": "Knight recaptures on d4, Black queen pressures b2."},
+        {"num_move": 6, "white_move": "Be3", "black_move": "Qb4+", "comment": "White develops bishop, Black checks, increasing pressure."},
+        {"num_move": 8, "white_move": "c3", "black_move": "Qd6", "comment": "White consolidates the pawn structure, Black queen retreats."},
+        {"num_move": 10, "white_move": "Nd4", "black_move": "Nf6", "comment": "White knight re-positions to d4, Black develops knight."},
+        {"num_move": 12, "white_move": "c4", "black_move": "O-O", "comment": "White pushes c-pawn, Black castles."},
+        {"num_move": 15, "white_move": "Nb3", "black_move": "Nxe2+", "comment": "White repositions knight, Black captures on e2 with check."},
+        {"num_move": 18, "white_move": "Bf4", "black_move": "Qb7", "comment": "White develops bishop to a more active position."},
+        {"num_move": 19, "white_move": "Ne7+", "black_move": "Kh8", "comment": "White knight checks, forcing the Black king to move."},
+        {"num_move": 21, "white_move": "e5", "black_move": "Qa4", "comment": "White pushes e5, aiming to open lines towards the Black king."},
+        {"num_move": 25, "white_move": "Rac1", "black_move": "Rfc8", "comment": "Rook moves to the open file, aiming for potential back rank issues."}
+      ]
+    }
+  ]
+}
