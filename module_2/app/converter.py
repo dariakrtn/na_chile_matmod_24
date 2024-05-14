@@ -45,7 +45,7 @@ def get_interesting_moments(pgn_file):
 
 
 
-def create_intersting_clips(video_file, pgn_str, start_time):
+def create_intersting_clips(video_file, pgn_file, start_time):
     
     pgn_str = pgn_file.read().decode('utf-8')
     # with open("./Ahackaton/Belgrade2024/Round_1.pgn.pgn", "r", encoding="utf-8") as f:
@@ -103,7 +103,7 @@ def create_intersting_clips(video_file, pgn_str, start_time):
 
 
 
-def create_shots(video_file, pgn_str, start_time):
+def create_shots(video_file, pgn_file, start_time):
     
     pgn_str = pgn_file.read().decode('utf-8')
     # with open("./Ahackaton/Belgrade2024/Round_1.pgn.pgn", "r", encoding="utf-8") as f:
