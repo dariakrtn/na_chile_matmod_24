@@ -51,7 +51,7 @@ def pars_pgn(pgn_str, match_gpt):
                     svg_num[n_m + k].append(f)
                 if (n_m) in num_gpt:
                     for mv in moves_gpt:
-                        if mv["num_move"] == (n_m):
+                        if mv["num_move"] == n_m:
                             comm.append(mv["comment"])
                 else:
                     comm.append(None)
@@ -62,7 +62,7 @@ def pars_pgn(pgn_str, match_gpt):
             mv_b.append(None)
             times_b.append(None)
             num_moves.append(n_m)
-            if (n_m) in num_gpt:
+            if n_m in num_gpt:
                 for mv in moves_gpt:
                     if mv["num_move"] == (n_m):
                         comm.append(mv["comment"])
