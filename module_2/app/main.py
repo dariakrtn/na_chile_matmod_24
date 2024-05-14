@@ -33,11 +33,11 @@ with col3:
 
 
 # actions
-if btn1: 
+if btn1:
 
     #check for file presence
     if (video_file != None) and (pgn_file != None):
-    
+
         video_file_converted = convert_video(video_file, pgn_file)
         
         # show video file
