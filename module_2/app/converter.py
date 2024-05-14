@@ -111,13 +111,15 @@ def create_shots(video_file, pgn_str, start_time):
     comments = df["comment"].values
 
     #video_data = video_file
+    video_file_path = "data/video_to_cut.mp4"
+    videoClip = VideoFileClip(video_file_path)
     # video_data = st.session_state.video_file.read()
 
     #write_bytesio_to_file(temp_file_to_save, video_data)
 
 
     # turns = [3, 5, 10] # TODO: generate automaticly
-    # video_clips = VideoClips.multi_timing_crop(video_file, df, start_time)
+    video_clips = VideoClips.multi_timing_crop_1(videoClip, df, start_time)
     # TODO: convert vei_clips to videos in bytes
     
     
