@@ -6,39 +6,41 @@ import pandas as pd
 import random
 
 
-from converter import create_intersting_clips
+from converter import create_intersting_clips, create_shots
 
 #st.set_page_config(layout="wide")
+
+#st.markdown(""":rainbow[Interesting Short Generator]""")
+st.markdown("""# :rainbow[Interesting Short Generator]""")
 
 # choose file section
 col1, col2= st.columns(2)
 
 with col1:
-    video_file = st.file_uploader(label="Choose a video", type=["mp4"])
+    video_file = st.file_uploader(label="Выберите видео", type=["mp4"])
 
 with col2:
-    pgn_file = st.file_uploader(label="Choose a PGN", type=["pgn"])
+    pgn_file = st.file_uploader(label="Выберите PGN файл", type=["pgn"])
 
 
-time_str = st.text_input("Enter time when first move occured (HH : MM : SS)", "00:00:00")
+time_str = st.text_input("Введите время первого хода в видео (HH : MM : SS)", "00:00:00")
 
 
 # choose action section
-col1, col2, col3 = st.columns(3)
+col1, col2 = st.columns(2)
 
 with col1:
-    btn1 = st.button("Get interesting moments")
+    btn1 = st.button("Создать интерсные моменты")
 
 with col2:
-    btn2 = st.button("Make shots")
-
+    btn2 = st.button("Создать shots")
 
 # actions
 if btn1:
 
     #check for file presence
     if (video_file != None) and (pgn_file != None):
-
+        
         start_time = get_sec(time_str)
         
         # st.text("Original video")
@@ -51,16 +53,22 @@ if btn1:
 
         # show video file
 
+        st.subheader("Создание интерсных моментов")
+
         num_cols = 3
         for i, (video, comment) in enumerate(zip(videos, comments)):
-            print(comment)
             c = i % num_cols
             if c == 0:
                 cols = st.columns(num_cols)
+                st.markdown("""---""")
             # cols[c].write(f'{t}')
             # cols[c].image(os.path.join(base_dir, f'camera_rgb_{t}.gif') )
             cols[c].video(video)
-            cols[c].write(comment)
+            cols[c].markdown(f"""
+            #### **Moment {i+1}** 
+
+            Comment: ***{comment}***
+            """)
 
         now = datetime.now()
         date_time = now.strftime("%m-%d-%Y-%H-%M-%S")
@@ -74,13 +82,46 @@ if btn1:
 
 
 if btn2:
+    
+    #check for file presence
     if (video_file != None) and (pgn_file != None):
-        # TODO: choose format for interesting moments
+
+        start_time = get_sec(time_str)
         
-        # TODO: get interesting moments
+        # st.text("Original video")
+        # another_video_file = video_file
+        # st.video(another_video_file.read())
 
-        # TODO: return and show interesting moments
-        st.text("some intersgin moments as an array")
+        # returns arrya of videos in bytes
+        videos, comments = create_shots(video_file, pgn_file, start_time)
+        
 
+        # show video file
+
+        st.subheader("Создание Shots")
+
+        num_cols = 3
+        for i, (video, comment) in enumerate(zip(videos, comments)):
+            c = i % num_cols
+            if c == 0:
+                cols = st.columns(num_cols)
+                st.markdown("""---""")
+            # cols[c].write(f'{t}')
+            # cols[c].image(os.path.join(base_dir, f'camera_rgb_{t}.gif') )
+            cols[c].video(video)
+            
+            cols[c].markdown(f"""
+            #### **Shots {i+1}** 
+
+            Comment: ***{comment}***
+            """)
+
+        now = datetime.now()
+        date_time = now.strftime("%m-%d-%Y-%H-%M-%S")
+
+        file_name = date_time    
+
+        # download video file
+        #st.download_button(label="Download", data=video_file_converted, file_name=file_name)
     else:
-        st.error("choose pgn file")
+        st.error("choose video & pgn file")
