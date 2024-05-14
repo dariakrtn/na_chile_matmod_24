@@ -19,6 +19,7 @@ def multi_timing_crop(videoclip, timings, start_time):
     
     timings = timings.loc[timings['comment'].notna()]
     timings.reset_index(drop=True, inplace=True)
+
     # print(timings)
     turns = timings["num_move"].values
     #print(turns)
