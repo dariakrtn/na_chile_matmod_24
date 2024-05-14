@@ -43,8 +43,8 @@ def comm_gpt(pgn_str):
         ]
     )
     res_json = json.loads(response.choices[0].message.content)
-#    with open(str(path.parents[0].absolute()) + f"\\{path.name.split('.')[0]}.json", "w") as file:
-#        json.dump(res_json, file)
+    with open(str(path.parents[0].absolute()) + f"\\{path.name.split('.')[0]}.json", "w") as file:
+        json.dump(res_json, file)
     return res_json
 
 comm_gpt(path)

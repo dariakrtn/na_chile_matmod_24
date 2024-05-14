@@ -4,7 +4,7 @@
       "white": "Pogorelskikh, Sofia",
       "black": "Kubicka, Anna",
       "moves": [
-        {"num_moves": 6, "white_moves": "O-O", "black_moves": "g6", "comment": "White castles kingside for safety."},
+        {"num_moves": 6, "white_move": "O-O", "black_moves": "g6", "comment": "White castles kingside for safety."},
         {"num_moves": 9, "white_moves": "dxe5", "black_moves": "dxe5", "comment": "White opens the center, changing the pawn structure."},
         {"num_moves": 10, "white_moves": "Be3", "black_moves": "O-O", "comment": "Black castles kingside, mirroring White."},
         {"num_moves": 16, "white_moves": "N3h2", "black_moves": "f5", "comment": "Black pushes f-pawn, initiating a kingside attack."},
