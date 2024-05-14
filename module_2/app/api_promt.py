@@ -3,13 +3,12 @@ import json
 from pathlib import Path
 
 
-
 # path = Path('./Ahackaton/Belgrade2024/Round_4.pgn.pgn')
 
 
 def comm_gpt(pgn_str):
     client = OpenAI(
-        api_key="sk-TnXDNlNp0tVnEuVI18883U3vrnCKTdpu",
+        api_key="TOKEN_PROXYAPI",
         base_url="https://api.proxyapi.ru/openai/v1",
     )
 
@@ -45,4 +44,4 @@ def comm_gpt(pgn_str):
     res_json = json.loads(response.choices[0].message.content)
     return res_json
 
-#comm_gpt(path)
+# comm_gpt(path)
