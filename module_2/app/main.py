@@ -35,7 +35,6 @@ with col1:
 with col2:
     btn2 = st.button("Создать shots")
 
-
 # actions
 if btn1:
 
