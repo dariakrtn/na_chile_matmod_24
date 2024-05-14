@@ -7,6 +7,7 @@ import io
 
 def pars_pgn(pgn_str, match_gpt):
     res = []
+    svg_all = []
     #    with open(path_json) as f:
     #        match_gpt = json.load(f)
     pgn = io.StringIO(pgn_str)
@@ -19,7 +20,7 @@ def pars_pgn(pgn_str, match_gpt):
         times_b = []
         # comm
         comm = []
-        i = 1
+        shet = 1
         n_m = 1
         board = game.board()
         headers = game.headers
@@ -28,34 +29,42 @@ def pars_pgn(pgn_str, match_gpt):
                 moves_gpt = mt["moves"]
                 num_gpt = [i['num_move'] for i in moves_gpt]
                 break
+        svg_num = {i:[] for i in num_gpt}
         for node in game.mainline():
             move = node.move
             time = node.comment
             board.push(move)
-            if i % 2 == 1:
+            if shet % 2 == 1:
                 mv_w.append(move.uci())
                 times_w.append(time.split('][')[0][5:])
+                for k in range(1, 4):
+                  if (n_m + k in num_gpt):
+                    f = chess.svg.board(board, size=350)
+                    svg_num[n_m + k].append(f)
             else:
                 mv_b.append(move.uci())
                 times_b.append(time.split('][')[0][5:])
                 num_moves.append(n_m)
-                if n_m in num_gpt:
+                for k in range(1, 4):
+                  if (n_m + k in num_gpt):
+                    f = chess.svg.board(board, size=350)
+                    svg_num[n_m + k].append(f)
+                if (n_m) in num_gpt:
                     for mv in moves_gpt:
-                        print(type(mv["num_move"]))
-                        if mv["num_move"] == n_m:
+                        if mv["num_move"] == (n_m):
                             comm.append(mv["comment"])
                 else:
                     comm.append(None)
                 n_m += 1
-            i += 1
+            shet += 1
         n_m += 1
         if len(mv_w) > len(mv_b):
             mv_b.append(None)
             times_b.append(None)
             num_moves.append(n_m)
-            if n_m in num_gpt:
+            if (n_m) in num_gpt:
                 for mv in moves_gpt:
-                    if mv["num_move"] == str(n_m):
+                    if mv["num_move"] == (n_m):
                         comm.append(mv["comment"])
             else:
                 comm.append(None)
@@ -68,12 +77,12 @@ def pars_pgn(pgn_str, match_gpt):
             "comment": comm
         })
         res.append(pgn_df)
+        svg_all.append(svg_num)
         game = chess.pgn.read_game(pgn)
 
-    return res
+    return res, svg_all
 
 # test
-k = str(open('../Ahackaton/Belgrade2024/Round_1.pgn.pgn').read())
-pars = pars_pgn(k, json.load((open('../Ahackaton/Belgrade2024/Round_1.json', encoding="utf-8"))))
-print(len(pars))
-print(pars)
+# k = str(open('./Round_1.pgn.pgn').read())
+# pars, svg_cadr = pars_pgn(k, json.load((open('./Round_1.json', encoding="utf-8"))))
+# print(pars)
