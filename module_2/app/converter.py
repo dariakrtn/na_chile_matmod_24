@@ -165,5 +165,5 @@ def create_shots(video_file, pgn_str, start_time):
     
 
 
-    return video_bytes, comments
+    return video_bytes
 

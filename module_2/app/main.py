@@ -93,7 +93,7 @@ if btn2:
         # st.video(another_video_file.read())
 
         # returns arrya of videos in bytes
-        video_byte = create_shots(video_file, pgn_file, start_time)
+        video_bytes = create_shots(video_file, pgn_file, start_time)
         
 
         # show video file
@@ -116,20 +116,20 @@ if btn2:
         #     Comment: ***{comment}***
         #     """)
         
-        st.video(video_byte)
+        st.video(video_bytes)
 
         st.markdown(f"""
             #### **Shots** 
-
-            Comment: ***{comment}***
             """)
+
+        
 
         now = datetime.now()
         date_time = now.strftime("%m-%d-%Y-%H-%M-%S")
 
-        file_name = date_time    
+        file_name = f"{date_time}_shorts.mp4"    
 
         # download video file
-        #st.download_button(label="Download", data=video_file_converted, file_name=file_name)
+        st.download_button(label="Скачать", data=video_bytes, file_name=file_name)
     else:
         st.error("choose video & pgn file")
