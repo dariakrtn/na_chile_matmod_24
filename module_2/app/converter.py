@@ -1,3 +1,4 @@
+import pars
 
 # TODO: import ml & other processing
 
@@ -12,7 +13,9 @@ def get_interesting_moments(pgn_file):
 
 def convert_video(video_file, pgn_file):
     
-    turn = get_interesting_moments(pgn_file)
+    turn = (pgn_file)
+
+
 
     # TODO: video processing
     
