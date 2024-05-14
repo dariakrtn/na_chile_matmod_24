@@ -1,219 +1,329 @@
 {
   "games": [
-    {      
-	"white": "Kulkarni, Bhakti ",
-	"black": "Pogorelskikh, Sofia",
-	"moves": [
-	  {"num_moves": "5", "white_moves": "O-O", "black_moves": "O-O", "comment": "Both sides castle early, solidifying their king's safety and preparing for the middlegame."},
-	  {"num_moves": "10", "white_moves": "Qxe7", "black_moves": "Re8", "comment": "White captures the pawn on e7, initiating a queen exchange and pressuring the e-file."},
-	  {"num_moves": "15", "white_moves": "Ng5", "black_moves": "Nxg5", "comment": "White's knight ventures into an aggressive position, which is promptly captured by Black's knight."},
-	  {"num_moves": "17", "white_moves": "Bxg5", "black_moves": "Rxe2", "comment": "White captures the knight on g5, and Black responds with a rook invasion on the e2 square, creating threats."},
-	  {"num_moves": "20", "white_moves": "Rac1", "black_moves": "Rxc1", "comment": "White aligns the rook with the queen on the c-file, Black captures the rook, leading to a series of exchanges."},
-	  {"num_moves": "25", "white_moves": "Bxc6", "black_moves": "bxc6","comment": "White captures the knight on c6, removing a key defender and opening lines against Black's king."},
-	  {"num_moves": "31", "white_moves": "Rd7", "black_moves": "Bc3", "comment": "White's rook moves to d7, placing more pressure on Black's position."},
-	  {"num_moves": "34", "white_moves": "Rb5", "black_moves": "Ra8", "comment": "White's rook maneuvers to b5 to support advancing passed pawns and control key squares."},
-	  {"num_moves": "41", "white_moves": "h4", "black_moves": "Be7", "comment": "White pushes the h-pawn to weaken Black's kingside pawn structure and create potential for a king side attack."},
-	  {"num_moves": "60", "white_moves": "Bf6", "black_moves": "Bg3", "comment": "White relocates the bishop to f6, aiming to dominate the long diagonal and restrict Black's king movement."}
-	]
+    {
+      "white": "Kulkarni, Bhakti",
+      "moves": [
+        {
+          "num_move": 5,
+          "white_move": "O-O",
+          "black_move": "O-O",
+          "comment": "Обе стороны завершают рокировку, обеспечивая безопасность королей."
+        },
+        {
+          "num_move": 6,
+          "white_move": "c4",
+          "black_move": "c6",
+          "comment": "Начинается борьба за центральные поля."
+        },
+        {
+          "num_move": 10,
+          "white_move": "Qxe7",
+          "black_move": "Re8",
+          "comment": "Белые выигрывают пешку, жертвуя качество."
+        },
+        {
+          "num_move": 13,
+          "white_move": "Qh4",
+          "black_move": "Bd5",
+          "comment": "Белые переводят ферзя на более активную позицию."
+        },
+        {
+          "num_move": 14,
+          "white_move": "Nc3",
+          "black_move": "Ne4",
+          "comment": "Черные пытаются контратаковать через центр."
+        },
+        {
+          "num_move": 16,
+          "white_move": "Nxd5",
+          "black_move": "cxd5",
+          "comment": "Белые выигрывают фигуру, раскрыв позицию противника."
+        },
+        {
+          "num_move": 17,
+          "white_move": "Bxg5",
+          "black_move": "Rxe2",
+          "comment": "Активизация слона на фоне угрозы матовой атаки."
+        },
+        {
+          "num_move": 20,
+          "white_move": "Rac1",
+          "black_move": "Rxc1",
+          "comment": "Белые полностью контролируют открытую линию."
+        },
+        {
+          "num_move": 32,
+          "white_move": "Rc7",
+          "black_move": "Bf6",
+          "comment": "Белые захватывают седьмую горизонталь, создавая угрозы."
+        },
+        {
+          "num_move": 44,
+          "white_move": "Bxb6",
+          "black_move": "Bb4",
+          "comment": "Белые захватывают важную пешку и продолжают давление."
+        }
+      ]
     },
-    {      
-	"white": "Maltsevskaya, Aleksandra",
-	"black": "Doluhanova, Evgeniya",
-	"moves": [
-            {
-                "num_moves": "5",
-                "white_moves": "Bxc6",
-                "black_moves": "dxc6",
-                "comment": "White captures on c6 early, opting to damage Black's pawn structure and exchange the bishop for a knight."
-            },
-            {
-                "num_moves": "7",
-                "white_moves": "O-O",
-                "black_moves": "O-O",
-                "comment": "Both players castle, leading to a safer king position and the beginning of the middle game."
-            },
-            {
-                "num_moves": "12",
-                "white_moves": "dxe5",
-                "black_moves": "Bxe5",
-                "comment": "White opens the center by capturing on e5, aiming to utilize the open lines for attacking potential."
-            },
-            {
-                "num_moves": "18",
-                "white_moves": "Nxe5",
-                "black_moves": "Qxe5",
-                "comment": "White sacrifices a knight for dynamic play and opens lines against Black's king."
-            },
-            {
-                "num_moves": "20",
-                "white_moves": "e5",
-                "black_moves": "Bf5",
-                "comment": "White pushes e5 to gain space in the center and kick the Black queen, increasing central control."
-            },
-            {
-                "num_moves": "24",
-                "white_moves": "axb5",
-                "black_moves": "cxb5",
-                "comment": "White opens the a-file by capturing the pawn on b5, aiming to activate the rook on a3."
-            },
-            {
-                "num_moves": "26",
-                "white_moves": "f5",
-                "black_moves": "Bb3",
-                "comment": "White aggressively pushes the f-pawn to f5 to open more lines and create attacking chances on the kingside."
-            },
-            {
-                "num_moves": "29",
-                "white_moves": "Raxa7",
-                "black_moves": "Rxa7",
-                "comment": "White doubles rooks on the seventh rank, a typical tactic to increase pressure in the opponent's camp."
-            },
-            {
-                "num_moves": "31",
-                "white_moves": "Ra8+",
-                "black_moves": "Nf8",
-                "comment": "White checks on the eighth rank, aiming to weaken Black's defense around the king."
-            },
-            {
-                "num_moves": "37",
-                "white_moves": "Nd5",
-                "black_moves": "Rd8",
-                "comment": "White relocates the knight to a strong central position, threatening to enter into Black's position."
-            }
-        ]
-   },
-   {
-   	"white": "Vujovic, Vera",
-	"black": "Djukic, Sandra",
-	"moves": [
-            {
-                "num_moves": "5",
-                "white_moves": "Qxd8+",
-                "black_moves": "Kxd8",
-                "comment": "White decides to trade queens early, pulling the black king out of safety and into the center."
-            },
-            {
-                "num_moves": "8",
-                "white_moves": "O-O-O",
-                "black_moves": "Bg4",
-                "comment": "White castles queenside, accelerating the game towards a clash on opposite wings."
-            },
-            {
-                "num_moves": "12",
-                "white_moves": "Bxg4+",
-                "black_moves": "Nexg4",
-                "comment": "White captures the knight on g4 with the bishop, initiating complex tactical sequences."
-            },
-            {
-                "num_moves": "15",
-                "white_moves": "Rxf4",
-                "black_moves": "Nxg2",
-                "comment": "White captures back on f4, leading to dynamic possibilities in the center and near Black's king."
-            },
-            {
-                "num_moves": "20",
-                "white_moves": "Rxf6",
-                "black_moves": "b5",
-                "comment": "White captures on f6 with the rook, creating threats against the exposed black king."
-            },
-            {
-                "num_moves": "24",
-                "white_moves": "Rxh7",
-                "black_moves": "Kb7",
-                "comment": "White's rook invades into Black's position, targeting the h7-pawn and increasing pressure."
-            },
-            {
-                "num_moves": "28",
-                "white_moves": "h4",
-                "black_moves": "Rh8",
-                "comment": "White pushes the h-pawn, aiming to open lines on the kingside for the rooks."
-            },
-            {
-                "num_moves": "32",
-                "white_moves": "Re7",
-                "black_moves": "Bf4+",
-                "comment": "White's rook moves to e7, threatening deeper penetration into Black's position."
-            },
-            {
-                "num_moves": "34",
-                "white_moves": "Rxe6+",
-                "black_moves": "",
-                "comment": "White sacrifices the rook for tactical opportunities against Black's weakened king position."
-            },
-            {
-                "num_moves": "40",
-                "white_moves": "Rd1",
-                "black_moves": "Rxd5",
-                "comment": "White aligns the rook with Black's queen, introducing threats of simplification in a favorable endgame."
-            }
-        ]
-
-   },
-   {
-   	"white": "Mehmed, Elif",
-	"black": "Kubicka, Anna1",
-	"moves": [
-            {
-                "num_moves": "5",
-                "white_moves": "Nxc6",
-                "black_moves": "Qf6",
-                "comment": "White captures the knight on c6, doubling Black's pawns and gaining structural advantage."
-            },
-            {
-                "num_moves": "7",
-                "white_moves": "gxf3",
-                "black_moves": "dxc6",
-                "comment": "White decides to simplify the position by trading queens and capturing back on f3, solidifying the kingside."
-            },
-            {
-                "num_moves": "9",
-                "white_moves": "fxe3",
-                "black_moves": "Be6",
-                "comment": "White resolves the tension in the center, opting for a pawn structure that supports future central expansion."
-            },
-            {
-                "num_moves": "12",
-                "white_moves": "Rg1",
-                "black_moves": "O-O",
-                "comment": "White prepares for kingside activity by positioning the rook on the g-file, signaling aggressive intentions."
-            },
-            {
-                "num_moves": "14",
-                "white_moves": "Rg5",
-                "black_moves": "h6",
-                "comment": "White intensifies the pressure on the kingside, challenging Black to defend the pawn structure."
-            },
-            {
-                "num_moves": "18",
-                "white_moves": "b3",
-                "black_moves": "b6",
-                "comment": "White solidifies the queenside pawns, preparing for a long-term battle over the center and opposite flanks."
-            },
-            {
-                "num_moves": "22",
-                "white_moves": "f4",
-                "black_moves": "Rd6",
-                "comment": "White pushes the f-pawn, opening up lines for the bishop and queen to potentially target Black's king."
-            },
-            {
-                "num_moves": "27",
-                "white_moves": "Rg6",
-                "black_moves": "Nb4",
-                "comment": "White's rook moves to g6, increasing the pressure on Black's position and threatening to penetrate further."
-            },
-            {
-                "num_moves": "34",
-                "white_moves": "e5",
-                "black_moves": "Rf7",
-                "comment": "White advances the central pawn to e5, aiming to break through Black's defenses and create new weaknesses."
-            },
-            {
-                "num_moves": "43",
-                "white_moves": "axb5+",
-                "black_moves": "axb5",
-                "comment": "White opens the a-file with a pawn sacrifice, trying to activate the rook and penetrate Black's queenside."
-            }
-        ]
+    {
+      "white": "Maltsevskaya, Aleksandra",
+      "moves": [
+        {
+          "num_move": 7,
+          "white_move": "O-O",
+          "black_move": "O-O",
+          "comment": "Обе стороны завершают рокировку, обеспечивая безопасность королей."
+        },
+        {
+          "num_move": 13,
+          "white_move": "a4",
+          "black_move": "Rd8",
+          "comment": "Белые начинают атаку на ферзевом фланге."
+        },
+        {
+          "num_move": 16,
+          "white_move": "Re1",
+          "black_move": "Re8",
+          "comment": "Обе стороны укрепляют свои позиции на центральных линиях."
+        },
+        {
+          "num_move": 18,
+          "white_move": "Nxe5",
+          "black_move": "Qxe5",
+          "comment": "Белые жертвуют пешку ради активной игры."
+        },
+        {
+          "num_move": 19,
+          "white_move": "f4",
+          "black_move": "Qh5",
+          "comment": "Белые начинают атаку на королевском фланге."
+        },
+        {
+          "num_move": 21,
+          "white_move": "Qd1",
+          "black_move": "Qxd1",
+          "comment": "Размен ферзей улучшает шансы белых на эндшпиль."
+        },
+        {
+          "num_move": 26,
+          "white_move": "f5",
+          "black_move": "Bb3",
+          "comment": "Белые усиливают давление, используя форпост на f5."
+        },
+        {
+          "num_move": 31,
+          "white_move": "Ra8+",
+          "black_move": "Nf8",
+          "comment": "Белые заставляют черных способствовать активизации своих фигур."
+        },
+        {
+          "num_move": 39,
+          "white_move": "Rb8",
+          "black_move": "Re7",
+          "comment": "Белые захватывают открытую линию и начинают активную игру."
+        },
+        {
+          "num_move": 44,
+          "white_move": "Ne6",
+          "black_move": "Rd7",
+          "comment": "Белые выигрывают качество и переходят в выигрышный эндшпиль."
+        }
+      ]
+    },
+    {
+      "white": "Vujovic, Vera",
+      "moves": [
+        {
+          "num_move": 6,
+          "white_move": "f4",
+          "black_move": "Bb4",
+          "comment": "Белые начинают активную игру на королевском фланге."
+        },
+        {
+          "num_move": 8,
+          "white_move": "O-O-O",
+          "black_move": "Bg4",
+          "comment": "Белые завершают длинную рокировку, готовя атаку."
+        },
+        {
+          "num_move": 10,
+          "white_move": "Bf3",
+          "black_move": "Kc8",
+          "comment": "Белые усиливают давление на f файл."
+        },
+        {
+          "num_move": 12,
+          "white_move": "Bxg4+",
+          "black_move": "Nexg4",
+          "comment": "Элегантный размен фигур с целью улучшения позиции."
+        },
+        {
+          "num_move": 14,
+          "white_move": "h3",
+          "black_move": "Ne3",
+          "comment": "Белые пытаются разменять активных коней черных."
+        },
+        {
+          "num_move": 17,
+          "white_move": "Bg5",
+          "black_move": "Bc5",
+          "comment": "Белые активируют своего слона."
+        },
+        {
+          "num_move": 20,
+          "white_move": "Rxf6",
+          "black_move": "b5",
+          "comment": "Белые начинают комбинацию с преимуществом в центре."
+        },
+        {
+          "num_move": 22,
+          "white_move": "Nd5",
+          "black_move": "Bd6",
+          "comment": "Белые переходят в атаку, используя силу центра."
+        },
+        {
+          "num_move": 30,
+          "white_move": "Nf5",
+          "black_move": "Be5",
+          "comment": "Белые угрожают выиграть фигуру."
+        },
+        {
+          "num_move": 32,
+          "white_move": "Re7",
+          "black_move": "Bf4+",
+          "comment": "Белые контролируют открытую линию и заканчивают атаку."
+        }
+      ]
+    },
+    {
+      "white": "Mehmed, Elif",
+      "moves": [
+        {
+          "num_move": 4,
+          "white_move": "Nxd4",
+          "black_move": "Bc5",
+          "comment": "Белые выигрывают темп, развивая фигуру."
+        },
+        {
+          "num_move": 6,
+          "white_move": "Qf3",
+          "black_move": "Qxf3",
+          "comment": "Белые предлагают размен ферзей, улучшая свою структуру."
+        },
+        {
+          "num_move": 10,
+          "white_move": "Bd3",
+          "black_move": "Ne7",
+          "comment": "Белые развивают фигуру, контролируя центр."
+        },
+        {
+          "num_move": 12,
+          "white_move": "Rg1",
+          "black_move": "O-O",
+          "comment": "Белые строят давление по открытой линии."
+        },
+        {
+          "num_move": 19,
+          "white_move": "Nc4",
+          "black_move": "fxe4",
+          "comment": "Белые начинают активные действия на ферзевом фланге."
+        },
+        {
+          "num_move": 27,
+          "white_move": "Rg6",
+          "black_move": "Nb4",
+          "comment": "Белые начинают комбинацию на ферзевом фланге."
+        },
+        {
+          "num_move": 28,
+          "white_move": "f5",
+          "black_move": "Nxd3",
+          "comment": "Активные действия белых на королевском фланге."
+        },
+        {
+          "num_move": 32,
+          "white_move": "Rd1",
+          "black_move": "Kg8",
+          "comment": "Белые полностью контролируют централизованные поля."
+        },
+        {
+          "num_move": 42,
+          "white_move": "d7",
+          "black_move": "b5",
+          "comment": "Белые делают решающее продвижение пешки в ферзи."
+        },
+        {
+          "num_move": 45,
+          "white_move": "Ke7",
+          "black_move": "Resign",
+          "comment": "Черные сдаются после продвижения белой пешки."
+        }
+      ]
+    },
+    {
+      "white": "Lu, Miaoyi",
+      "moves": [
+        {
+          "num_move": 6,
+          "white_move": "Be3",
+          "black_move": "Nf6",
+          "comment": "Белые стремятся к активной фигуре и развитию."
+        },
+        {
+          "num_move": 8,
+          "white_move": "Be2",
+          "black_move": "d6",
+          "comment": "Обе стороны завершают развитие фигур."
+        },
+        {
+          "num_move": 18,
+          "white_move": "Qb2",
+          "black_move": "Qb6",
+          "comment": "Обе стороны защищают свои позиции."
+        },
+        {
+          "num_move": 23,
+          "white_move": "Nb5",
+          "black_move": "Bxb5",
+          "comment": "Белые создают угрозу на ферзевом фланге."
+        },
+        {
+          "num_move": 28,
+          "white_move": "f4",
+          "black_move": "Rf8",
+          "comment": "Белые начинают активную атаку на королевском фланге."
+        },
+        {
+          "num_move": 36,
+          "white_move": "Be3",
+          "black_move": "gxf5",
+          "comment": "Белые активируют своего слона и грозят атакой."
+        },
+        {
+          "num_move": 41,
+          "white_move": "Bxd8",
+          "black_move": "Rxd8",
+          "comment": "Белые выигрывают качество."
+        },
+        {
+          "num_move": 49,
+          "white_move": "Rd8",
+          "black_move": "Kg7",
+          "comment": "Белые захватывают открытую линию и создают угрозы."
+        },
+        {
+          "num_move": 54,
+          "white_move": "g3",
+          "black_move": "Bd4",
+          "comment": "Белые начинают атаку на королевском фланге."
+        },
+        {
+          "num_move": 62,
+          "white_move": "g4",
+          "black_move": "Be3",
+          "comment": "Белые завершают атаку, выигрывая фигуру."
+        }
+      ]
     }
-
+  ]
 }
