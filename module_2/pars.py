@@ -11,12 +11,11 @@ def pars_pgn(pgn_str, match_gpt):
     pgn = io.StringIO(pgn_str)
     game = chess.pgn.read_game(pgn)
     headers = chess.pgn.read_headers(pgn)
-    for mt in match_gpt:
-        if headers.get("White", "?") in mt["game"]:
+    for mt in match_gpt["games"]:
+        if headers.get("White", "?") in mt["white"]:
             moves_gpt = mt["moves"]
             num_gpt = [i['num_moves'] for i in moves_gpt]
             break
-        print(num_gpt)
         while game is not None:
             num_moves = []
             mv_w = []
@@ -58,8 +57,6 @@ def pars_pgn(pgn_str, match_gpt):
                             comm.append(mv["comment"])
                 else:
                     comm.append(None)
-
-            print(len(num_moves), len(mv_w), len(mv_b), len(times_w), len(times_b), len(comm))
             new_row = pd.DataFrame({
                 "num_move": num_moves,
                 "move_w": mv_w,
