@@ -3,18 +3,18 @@ import chess.pgn
 import pandas as pd
 import json
 
-def pars_pgn(path_pgn, path_json):
+def pars_pgn(pgn, match_gpt):
     res = []
-    with open(path_json) as f:
-        match_gpt = json.load(f)
-    with open(path_pgn) as pgn:
-        game = chess.pgn.read_game(pgn)
-        headers = chess.pgn.read_headers(pgn)
-        for mt in match_gpt:
-            if headers.get("White", "?") in mt["game"]:
-                moves_gpt = mt["moves"]
-                num_gpt = [i['num_moves'] for i in moves_gpt]
-                break
+#    with open(path_json) as f:
+#        match_gpt = json.load(f)
+
+    game = chess.pgn.read_game(pgn)
+    headers = chess.pgn.read_headers(pgn)
+    for mt in match_gpt:
+        if headers.get("White", "?") in mt["game"]:
+            moves_gpt = mt["moves"]
+            num_gpt = [i['num_moves'] for i in moves_gpt]
+            break
         print(num_gpt)
         while game is not None:
             num_moves = []

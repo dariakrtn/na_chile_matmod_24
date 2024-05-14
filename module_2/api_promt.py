@@ -9,7 +9,7 @@ def pgn_to_str(pgn_path):
     return pgn_str
 
 
-path = Path('./Ahackaton/Belgrade2024/Round_1.pgn.pgn')
+path = Path('./Ahackaton/Belgrade2024/Round_4.pgn.pgn')
 
 
 def comm_gpt(path):
@@ -48,8 +48,8 @@ def comm_gpt(path):
         ]
     )
     res_json = json.loads(response.choices[0].message.content)
-    with open(str(path.parents[0].absolute()) + f"\\{path.name.split('.')[0]}.json", "w") as file:
-        json.dump(res_json, file)
+#    with open(str(path.parents[0].absolute()) + f"\\{path.name.split('.')[0]}.json", "w") as file:
+#        json.dump(res_json, file)
     return res_json
 
 comm_gpt(path)
