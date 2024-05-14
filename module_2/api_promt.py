@@ -3,16 +3,15 @@ import json
 from pathlib import Path
 
 
-def pgn_to_str(pgn_path):
-    with open(pgn_path) as pgn:
-        pgn_str = str(pgn.read())
+def pgn_to_str(pgn_io):
+    pgn_str = str(pgn_io)
     return pgn_str
 
 
 path = Path('./Ahackaton/Belgrade2024/Round_4.pgn.pgn')
 
 
-def comm_gpt(path):
+def comm_gpt(pgn_io):
     client = OpenAI(
         api_key="sk-TnXDNlNp0tVnEuVI18883U3vrnCKTdpu",
         base_url="https://api.proxyapi.ru/openai/v1",
@@ -44,7 +43,7 @@ def comm_gpt(path):
     }
     ]}
     """},
-            {"role": "user", "content": pgn_to_str(path)}
+            {"role": "user", "content": pgn_to_str(pgn_io)}
         ]
     )
     res_json = json.loads(response.choices[0].message.content)
