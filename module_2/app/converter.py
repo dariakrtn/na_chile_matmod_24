@@ -1,5 +1,8 @@
 import pars
 import api_promt
+import VideoClips
+import json
+
 
 # TODO: import ml & other processing
 
@@ -38,12 +41,16 @@ def write_bytesio_to_file(filename, bytesio):
 
 def convert_video(video_file, pgn_file, start_time):
     
-    pgn_str = pgn_file.read().decode('utf-8')
-    print(pgn_str)
+    #pgn_str = pgn_file.read().decode('utf-8')
+    with open("./Ahackaton/Belgrade2024/Round_1.pgn.pgn", "r", encoding="utf-8") as f:
+        pgn_str = f.read()
+    #print(pgn_str)
 
-
-    res_json = api_promt.comm_gpt(pgn_str)
-
+    
+    #res_json = api_promt.comm_gpt(pgn_str)
+    with open("./Ahackaton/Belgrade2024/Round_1.json", "r", encoding="utf-8") as f:
+        res_json = json.loads(f.read())
+   
     df = pars.pars_pgn(pgn_str, res_json)[0]
 
     #video_data = video_file
@@ -53,7 +60,7 @@ def convert_video(video_file, pgn_file, start_time):
 
 
     # turns = [3, 5, 10] # TODO: generate automaticly
-    video_clips = multi_timing_crop(video_file, df, start_time)
+    # video_clips = VideoClips.multi_timing_crop(video_file, df, start_time)
 
     video_file_converted = video_file
     return video_file_converted

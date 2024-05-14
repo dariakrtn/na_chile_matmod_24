@@ -17,9 +17,12 @@ def timing_crop(videoclip, parse, turn, w_start_time):
 
 def multi_timing_crop(videoclip, timings, start_time):
     
-    timings = timings.loc[df['comment'].notna()]
+    timings = timings.loc[timings['comment'].notna()]
+    timings.reset_index(drop=True, inplace=True)
+    # print(timings)
     turns = timings["num_move"].values
-    
+    #print(turns)
+
     videoclips = []
     for turn in turns:
         videoclips.append(timing_crop(videoclip, timings, turn, start_time))
