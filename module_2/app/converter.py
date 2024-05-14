@@ -14,17 +14,20 @@ def get_interesting_moments(pgn_file):
 
 def convert_video(video_file, pgn_file):
     
+
     pgn_str = pgn_file.read()
     print(pgn_str)
 
+    
     res_json = api_promt.comm_gpt(pgn_str)
 
-    turn = pars.pars_pgn(pgn_file.read(), res_json)
+    df = pars.pars_pgn(pgn_file.read(), res_json)[0]
+
+    # TODO: turns
+    # turns = ... 
 
 
 
-    # TODO: video processing
-    
     video_data = st.session_state.video_file.read()
 
     # Create a BytesIO object to hold the video data
