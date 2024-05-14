@@ -39,9 +39,10 @@ def pars_pgn(pgn_str, match_gpt):
                 mv_b.append(move.uci())
                 times_b.append(time.split('][')[0][5:])
                 num_moves.append(n_m)
-                if str(n_m) in num_gpt:
+                if n_m in num_gpt:
                     for mv in moves_gpt:
-                        if mv["num_moves"] == str(n_m):
+                        print(type(mv["num_move"]))
+                        if mv["num_move"] == n_m:
                             comm.append(mv["comment"])
                 else:
                     comm.append(None)
@@ -52,9 +53,9 @@ def pars_pgn(pgn_str, match_gpt):
             mv_b.append(None)
             times_b.append(None)
             num_moves.append(n_m)
-            if str(n_m) in num_gpt:
+            if n_m in num_gpt:
                 for mv in moves_gpt:
-                    if mv["num_moves"] == str(n_m):
+                    if mv["num_move"] == str(n_m):
                         comm.append(mv["comment"])
             else:
                 comm.append(None)
@@ -73,6 +74,6 @@ def pars_pgn(pgn_str, match_gpt):
 
 # test
 k = str(open('../Ahackaton/Belgrade2024/Round_1.pgn.pgn').read())
-pars = pars_pgn(k, json.load((open('../Ahackaton/Belgrade2024/Round_1.json'))))
+pars = pars_pgn(k, json.load((open('../Ahackaton/Belgrade2024/Round_1.json', encoding="utf-8"))))
 print(len(pars))
 print(pars)
