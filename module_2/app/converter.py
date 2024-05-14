@@ -1,9 +1,10 @@
 import pars
 import api_promt
 import VideoClips
+import create_audio_comment
 import json
 
-from os import listdir
+from os import listdir, remove
 from os.path import isfile, join
 
 
@@ -47,14 +48,14 @@ def get_interesting_moments(pgn_file):
 def create_intersting_clips(video_file, pgn_str, start_time):
     
     #pgn_str = pgn_file.read().decode('utf-8')
-    with open("./Ahackaton/Belgrade2024/Round_1.pgn.pgn", "r", encoding="utf-8") as f:
-        pgn_str = f.read()
+    # with open("./Ahackaton/Belgrade2024/Round_1.pgn.pgn", "r", encoding="utf-8") as f:
+    #     pgn_str = f.read()
     #print(pgn_str)
 
     
-    #res_json = api_promt.comm_gpt(pgn_str)
-    with open("./Ahackaton/Belgrade2024/Round_1.json", "r", encoding="utf-8") as f:
-        res_json = json.loads(f.read())
+    res_json = api_promt.comm_gpt(pgn_str)
+    # with open("./Ahackaton/Belgrade2024/Round_1.json", "r", encoding="utf-8") as f:
+    #     res_json = json.loads(f.read())
    
     df = pars.pars_pgn(pgn_str, res_json)[0][0]
 
@@ -63,25 +64,35 @@ def create_intersting_clips(video_file, pgn_str, start_time):
     comments = df["comment"].values
     print(comments)
 
-    #video_data = video_file
-    # video_data = st.session_state.video_file.read()
 
-    #write_bytesio_to_file(temp_file_to_save, video_data)
+    video_data = video_file.read()
+    
+    video_file_path = "data/video.mp4"
+    write_bytesio_to_file(video_file_path, video_data)
+    videoClip = VideoFileClip(video_file_path)
+    remove(video_file_path)
 
 
-    # turns = [3, 5, 10] # TODO: generate automaticly
-    # video_clips = VideoClips.multi_timing_crop(video_file, df, start_time)
-    # TODO: convert vei_clips to videos in bytes
+    video_clips = VideoClips.multi_timing_crop_1(videoClip, df, start_time)
     
     
-    # TEMP
-    videos = [] 
+    video_bytes = []
+    for i, video_clip in enumerate(video_clips):
+        video_file_i_path = "data/clip_{i}.mp4"
+        video_clip.write_videofile(filename=video_file_i_path)
+        with open(video_file_i_path, "rb") as f:
+            videos_bytes.append(f.read())
+        remove(video_file_i_path)
 
-    path = "data/videos"
-    files = [f for f in listdir(path) if isfile(join(path, f))]
-    for file in files:
-        with open(f"{path}/{file}", "rb") as f:
-            videos.append(f.read())
+    
+    # # TEMP
+    # videos = [] 
+
+    # path = "data/videos"
+    # files = [f for f in listdir(path) if isfile(join(path, f))]
+    # for file in files:
+    #     with open(f"{path}/{file}", "rb") as f:
+    #         videos.append(f.read())
     
 
     #video_file_converted = video_file
@@ -94,15 +105,15 @@ def create_intersting_clips(video_file, pgn_str, start_time):
 
 def create_shots(video_file, pgn_str, start_time):
     
-    #pgn_str = pgn_file.read().decode('utf-8')
-    with open("./Ahackaton/Belgrade2024/Round_1.pgn.pgn", "r", encoding="utf-8") as f:
-        pgn_str = f.read()
-    #print(pgn_str)
+    # #pgn_str = pgn_file.read().decode('utf-8')
+    # with open("./Ahackaton/Belgrade2024/Round_1.pgn.pgn", "r", encoding="utf-8") as f:
+    #     pgn_str = f.read()
+    # #print(pgn_str)
 
     
-    #res_json = api_promt.comm_gpt(pgn_str)
-    with open("./Ahackaton/Belgrade2024/Round_1.json", "r", encoding="utf-8") as f:
-        res_json = json.loads(f.read())
+    res_json = api_promt.comm_gpt(pgn_str)
+    # with open("./Ahackaton/Belgrade2024/Round_1.json", "r", encoding="utf-8") as f:
+    #     res_json = json.loads(f.read())
    
     df = pars.pars_pgn(pgn_str, res_json)[0][0]
 
@@ -110,31 +121,49 @@ def create_shots(video_file, pgn_str, start_time):
     df.reset_index(drop=True, inplace=True)
     comments = df["comment"].values
 
-    #video_data = video_file
-    video_file_path = "data/video_to_cut.mp4"
-    videoClip = VideoFileClip(video_file_path)
-    # video_data = st.session_state.video_file.read()
+    
+    video_data = video_file.read()
 
-    #write_bytesio_to_file(temp_file_to_save, video_data)
+    video_file_path = "data/video.mp4"
+    write_bytesio_to_file(video_file_path, video_data)
+    video = VideoFileClip(video_file_path)
+    remove(video_file_path)
+
+    audios = []
+    for i, comment in enumerate(comments):
+        audio_file_i_path = f"data/audio_file_{i}.wav"
+        creat_audio_comment.audio_comm(comment, audio_file_i_path)
+        audios.append(AudioFileClip(audio_file_i_path))
+        remove(audio_file_i_path)
+
+    
 
 
-    # turns = [3, 5, 10] # TODO: generate automaticly
-    video_clips = VideoClips.multi_timing_crop_1(videoClip, df, start_time)
+
+    video_clip = VideoClips.multi_timing_crop_2(videoClip, df, 1, start_time, audios)
     # TODO: convert vei_clips to videos in bytes
-    
-    
-    # TEMP
-    videos = [] 
+    # for i, video_clip in enumerate(video_clips):
+    #     video_file_i_path = "data/clip_{i}.mp4"
+    #     video_clip.write_videofile(filename=video_file_i_path)
+    #     with open(video_file_i_path, "rb") as f:
+    #         videos_bytes.append(f.read())
 
-    path = "data/videos"
-    files = [f for f in listdir(path) if isfile(join(path, f))]
-    for file in files:
-        with open(f"{path}/{file}", "rb") as f:
-            videos.append(f.read())
+    video_file = "data/video.mp4"
+    video_clip.write_videofile(filename=video_file)
+    with open(video_file, "rb") as f:
+        video_bytes = f.read()
+    remove(video_file)
+
+    # # TEMP
+    # videos = [] 
+
+    # path = "data/videos"
+    # files = [f for f in listdir(path) if isfile(join(path, f))]
+    # for file in files:
+    #     with open(f"{path}/{file}", "rb") as f:
+    #         videos.append(f.read())
     
 
-    #video_file_converted = video_file
-    
 
-    return videos, comments
+    return video_bytes, comments
 

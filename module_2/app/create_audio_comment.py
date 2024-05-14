@@ -16,6 +16,6 @@ def audio_comm(comment, output_name):
     })
     # You can access the audio with IPython.display for example
 
-    with open(f'{output_name}.wav', mode='bx') as f:
+    with open(f'{output_name}', mode='bx') as f:
         f.write(audio_bytes)
     #return audio_bytes
