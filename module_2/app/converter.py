@@ -1,4 +1,5 @@
 import pars
+import api_promt
 
 # TODO: import ml & other processing
 
@@ -13,7 +14,12 @@ def get_interesting_moments(pgn_file):
 
 def convert_video(video_file, pgn_file):
     
-    turn = (pgn_file)
+    pgn_str = pgn_file.read()
+    print(pgn_str)
+
+    res_json = api_promt.comm_gpt(pgn_str)
+
+    turn = pars.pars_pgn(pgn_file.read(), res_json)
 
 
 

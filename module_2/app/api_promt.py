@@ -47,4 +47,4 @@ def comm_gpt(pgn_str):
 #        json.dump(res_json, file)
     return res_json
 
-comm_gpt(path)
+#comm_gpt(path)
