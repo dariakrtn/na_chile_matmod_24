@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 
-path = Path('./Ahackaton/Belgrade2024/Round_4.pgn.pgn')
+# path = Path('./Ahackaton/Belgrade2024/Round_4.pgn.pgn')
 
 
 def comm_gpt(pgn_str):
@@ -14,7 +14,7 @@ def comm_gpt(pgn_str):
     )
 
     response = client.chat.completions.create(
-        model="gpt-4o",
+        model="gpt-3.5-turbo-1106",
         response_format={"type": "json_object"},
         messages=[
             {"role": "system", "content": """Ты шахматный комментатор. Я нанял тебя чтобы ты рассказал кратко про партию. После того как ты это сделаешь тебя ждет вознаграждение.
@@ -43,8 +43,6 @@ def comm_gpt(pgn_str):
         ]
     )
     res_json = json.loads(response.choices[0].message.content)
-    with open(str(path.parents[0].absolute()) + f"\\{path.name.split('.')[0]}.json", "w") as file:
-        json.dump(res_json, file)
     return res_json
 
 #comm_gpt(path)

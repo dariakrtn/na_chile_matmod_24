@@ -7,13 +7,13 @@ import api_promt
 def get_interesting_moments(pgn_file):
     
     # TODO: pgn ifle analisys & extract interesting moments as Dataframe
-    pgn_str = pgn_file.read()
+    pgn_str = pgn_file.read().decode('utf-8')
     print(pgn_str)
 
 
     res_json = api_promt.comm_gpt(pgn_str)
 
-    df = pars.pars_pgn(pgn_file.read(), res_json)[0]
+    df = pars.pars_pgn(pgn_str, res_json)[0]
 
 
 
@@ -21,6 +21,8 @@ def get_interesting_moments(pgn_file):
 
 
 
+
+temp_file_to_save = "../data/videos/tmp_video.mp4"
 
 # func to save BytesIO on a drive
 def write_bytesio_to_file(filename, bytesio):
@@ -33,19 +35,22 @@ def write_bytesio_to_file(filename, bytesio):
         # Copy the BytesIO stream to the output file
         outfile.write(bytesio.getbuffer())
 
-temp_file_to_save = "../data/videos/tmp_video.mp4"
 
 def convert_video(video_file, pgn_file, start_time):
     
-
-    pgn_str = pgn_file.read()
+    pgn_str = pgn_file.read().decode('utf-8')
     print(pgn_str)
 
 
     res_json = api_promt.comm_gpt(pgn_str)
 
-    df = pars.pars_pgn(pgn_file.read(), res_json)[0]
-    interesting_moments = df.loc[df['comment'].notna()].values()
+    df = pars.pars_pgn(pgn_str, res_json)[0]
+
+    df = df.loc[df['comment'].notna()]
+
+    df = df.loc[df['comment'].notna()]
+    print(df)
+    interesting_moments = df["num_move"].values
     print(interesting_moments)
 
     #video_data = video_file

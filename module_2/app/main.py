@@ -38,7 +38,10 @@ if btn1:
     #check for file presence
     if (video_file != None) and (pgn_file != None):
 
-        video_file_converted = convert_video(video_file, pgn_file)
+        print(time_str)
+        start_time = get_sec(time_str)
+        print(start_time)
+        video_file_converted = convert_video(video_file, pgn_file, start_time)
         
         # show video file
         st.video(video_file_converted.read())

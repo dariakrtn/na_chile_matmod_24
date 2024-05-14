@@ -41,7 +41,7 @@ def pars_pgn(pgn_str, match_gpt):
                 num_moves.append(n_m)
                 if n_m in num_gpt:
                     for mv in moves_gpt:
-                        print(type(mv["num_move"]))
+                        # print(type(mv["num_move"]))
                         if mv["num_move"] == n_m:
                             comm.append(mv["comment"])
                 else:
@@ -73,7 +73,7 @@ def pars_pgn(pgn_str, match_gpt):
     return res
 
 # test
-k = str(open('../Ahackaton/Belgrade2024/Round_1.pgn.pgn').read())
-pars = pars_pgn(k, json.load((open('../Ahackaton/Belgrade2024/Round_1.json', encoding="utf-8"))))
-print(len(pars))
-print(pars)
+#k = str(open('../Ahackaton/Belgrade2024/Round_1.pgn.pgn').read())
+#pars = pars_pgn(k, json.load((open('../Ahackaton/Belgrade2024/Round_1.json', encoding="utf-8"))))
+#print(len(pars))
+#print(pars)
