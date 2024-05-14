@@ -46,13 +46,6 @@ def convert_video(video_file, pgn_file, start_time):
 
     df = pars.pars_pgn(pgn_str, res_json)[0]
 
-    df = df.loc[df['comment'].notna()]
-
-    df = df.loc[df['comment'].notna()]
-    print(df)
-    interesting_moments = df["num_move"].values
-    print(interesting_moments)
-
     #video_data = video_file
     # video_data = st.session_state.video_file.read()
 
@@ -60,7 +53,7 @@ def convert_video(video_file, pgn_file, start_time):
 
 
     # turns = [3, 5, 10] # TODO: generate automaticly
-    #video_clips = multi_timing_crop(video_clip, df, turns, start_time)
+    video_clips = multi_timing_crop(video_file, df, start_time)
 
     video_file_converted = video_file
     return video_file_converted
