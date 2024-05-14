@@ -2,12 +2,13 @@ import chess
 import chess.pgn
 import pandas as pd
 import json
+import io
 
-def pars_pgn(pgn, match_gpt):
+def pars_pgn(pgn_str, match_gpt):
     res = []
 #    with open(path_json) as f:
 #        match_gpt = json.load(f)
-
+    pgn = io.StringIO(pgn_str)
     game = chess.pgn.read_game(pgn)
     headers = chess.pgn.read_headers(pgn)
     for mt in match_gpt:
