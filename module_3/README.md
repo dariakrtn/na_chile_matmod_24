@@ -1,3 +1,5 @@
+![alt text](image.png "Блок схема алгоритма")
+
 Pseudocode:
 
 ```
