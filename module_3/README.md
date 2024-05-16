@@ -1,6 +1,8 @@
+
+## Блок схема алгоритма
 ![alt text](img.png "Блок схема алгоритма")
 
-Pseudocode:
+## Pseudocode
 
 ```
 graph:
