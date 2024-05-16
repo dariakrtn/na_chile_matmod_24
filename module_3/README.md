@@ -4,7 +4,7 @@
 
 ## Pseudocode
 
-```
+```python
 graph:
     ways = { "1":[ ["2", [u1, ... ]], ... ], ... }
     keys = { "1":[u1, ...], ... }
