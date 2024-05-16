@@ -48,7 +48,7 @@ if btn1:
         # st.video(another_video_file.read())
 
         # returns arrya of videos in bytes
-        videos, comments = create_intersting_clips(video_file, pgn_file, start_time)
+        videos_bytes, comments = create_intersting_clips(video_file, pgn_file, start_time)
         
 
         # show video file
@@ -73,10 +73,10 @@ if btn1:
         now = datetime.now()
         date_time = now.strftime("%m-%d-%Y-%H-%M-%S")
 
-        file_name = date_time    
+        file_name = date_time
 
         # download video file
-        #st.download_button(label="Download", data=video_file_converted, file_name=file_name)
+        # st.download_button(label="Download", data=video_file_converted, file_name=file_name)
     else:
         st.error("choose video & pgn")
 
@@ -93,35 +93,43 @@ if btn2:
         # st.video(another_video_file.read())
 
         # returns arrya of videos in bytes
-        videos, comments = create_shots(video_file, pgn_file, start_time)
+        video_bytes = create_shots(video_file, pgn_file, start_time)
         
 
         # show video file
 
         st.subheader("Создание Shots")
 
-        num_cols = 3
-        for i, (video, comment) in enumerate(zip(videos, comments)):
-            c = i % num_cols
-            if c == 0:
-                cols = st.columns(num_cols)
-                st.markdown("""---""")
-            # cols[c].write(f'{t}')
-            # cols[c].image(os.path.join(base_dir, f'camera_rgb_{t}.gif') )
-            cols[c].video(video)
+        # num_cols = 3
+        # for i, (video, comment) in enumerate(zip(videos, comments)):
+        #     c = i % num_cols
+        #     if c == 0:
+        #         cols = st.columns(num_cols)
+        #         st.markdown("""---""")
+        #     # cols[c].write(f'{t}')
+        #     # cols[c].image(os.path.join(base_dir, f'camera_rgb_{t}.gif') )
+        #     cols[c].video(video)
             
-            cols[c].markdown(f"""
-            #### **Shots {i+1}** 
+        #     cols[c].markdown(f"""
+        #     #### **Shots {i+1}** 
 
-            Comment: ***{comment}***
+        #     Comment: ***{comment}***
+        #     """)
+        
+        st.video(video_bytes)
+
+        st.markdown(f"""
+            #### **Shots** 
             """)
+
+        
 
         now = datetime.now()
         date_time = now.strftime("%m-%d-%Y-%H-%M-%S")
 
-        file_name = date_time    
+        file_name = f"{date_time}_shorts.mp4"    
 
         # download video file
-        #st.download_button(label="Download", data=video_file_converted, file_name=file_name)
+        st.download_button(label="Скачать", data=video_bytes, file_name=file_name)
     else:
         st.error("choose video & pgn file")
