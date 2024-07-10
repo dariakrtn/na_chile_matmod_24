@@ -6,7 +6,7 @@ import pandas as pd
 import random
 
 
-from converter import create_intersting_clips, create_shots
+from converter import create_shots, create_intersting_clips
 
 #st.set_page_config(layout="wide")
 
@@ -14,7 +14,7 @@ from converter import create_intersting_clips, create_shots
 st.markdown("""# :rainbow[Interesting Short Generator]""")
 
 # choose file section
-col1, col2= st.columns(2)
+col1, col2 = st.columns(2)
 
 with col1:
     video_file = st.file_uploader(label="Выберите видео", type=["mp4"])
@@ -27,13 +27,11 @@ time_str = st.text_input("Введите время первого хода в �
 
 
 # choose action section
-col1, col2 = st.columns(2)
+col1 = st.columns(1)
 
 with col1:
     btn1 = st.button("Создать интерсные моменты")
 
-with col2:
-    btn2 = st.button("Создать shots")
 
 # actions
 if btn1:
@@ -56,7 +54,7 @@ if btn1:
         st.subheader("Создание интерсных моментов")
 
         num_cols = 3
-        for i, (video, comment) in enumerate(zip(videos, comments)):
+        for i, (video, comment) in enumerate(zip(videos_bytes, comments)):
             c = i % num_cols
             if c == 0:
                 cols = st.columns(num_cols)
@@ -81,7 +79,7 @@ if btn1:
         st.error("choose video & pgn")
 
 
-if btn2:
+'''if btn2:
     
     #check for file presence
     if (video_file != None) and (pgn_file != None):
@@ -132,4 +130,4 @@ if btn2:
         # download video file
         st.download_button(label="Скачать", data=video_bytes, file_name=file_name)
     else:
-        st.error("choose video & pgn file")
+    st.error("choose video & pgn file")'''

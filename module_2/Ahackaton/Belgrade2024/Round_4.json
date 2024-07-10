@@ -4,80 +4,97 @@
       "white": "Pogorelskikh, Sofia",
       "black": "Kubicka, Anna",
       "moves": [
-        {"num_move": 6, "white_move": "O-O", "black_moves": "g6", "comment": "White castles kingside for safety."},
-        {"num_move": 9, "white_moves": "dxe5", "black_moves": "dxe5", "comment": "White opens the center, changing the pawn structure."},
-        {"num_move": 10, "white_moves": "Be3", "black_moves": "O-O", "comment": "Black castles kingside, mirroring White."},
-        {"num_move": 16, "white_moves": "N3h2", "black_moves": "f5", "comment": "Black pushes f-pawn, initiating a kingside attack."},
-        {"num_move": 17, "white_moves": "exf5", "black_moves": "Nxf5", "comment": "White sacrifices a pawn to open lines."},
-        {"num_move": 18, "white_moves": "Ng3", "black_moves": "Nxg3", "comment": "Black captures on g3, continuing the attack."},
-        {"num_move": 22, "white_moves": "Nd2", "black_moves": "Rf7", "comment": "Black prepares to double rooks on the f-file."},
-        {"num_move": 30, "white_moves": "Qa2", "black_moves": "Nf2+", "time": 1709660818505, "comment": "Black forks king and queen, gaining material."},
-        {"num_move": 31, "white_moves": "Kh2", "black_moves": "Be5+", "time": 1709661039723, "comment": "Black checks the king, increasing pressure."},
-        {"num_move": 41, "white_moves": "Rxe2", "black_moves": "Qxe2", "time": 1709662830766, "comment": "Decisive queen sacrifice leading to checkmate threat."}
-      ]
-    },
-    {
-      "white": "Djukic, Sandra",
-      "black": "Xu, Yuanyuan",
-      "moves": [
-        {"num_move": 4, "white_moves": "cxd5", "black_moves": "exd5", "comment": "White plays Queen's Gambit Accepted."},
-        {"num_move": 7, "white_moves": "O-O", "black_moves": "Be6", "comment": "White castles kingside."},
-        {"num_move": 10, "white_moves": "Bb2", "black_moves": "cxd4", "comment": "White develops bishop to control long diagonal."},
-        {"num_move": 11, "white_moves": "Nxd4", "black_moves": "Nxd4", "comment": "Exchange of knights in the center."},
-        {"num_move": 17, "white_moves": "Rc1", "black_moves": "h5", "comment": "White places rook on open c-file."},
-        {"num_move": 21, "white_moves": "Rxc5", "black_moves": "Rxc5", "comment": "White captures rook, prompting exchanges."},
-        {"num_move": 23, "white_moves": "Qxc5", "black_moves": "Rc8", "comment": "White captures pawn on c5, increasing material advantage."},
-        {"num_move": 27, "white_moves": "Qxd5+", "black_moves": "Nf7", "comment": "White checks with queen, adding pressure."},
-        {"num_move": 31, "white_moves": "a4", "black_moves": "Be6", "comment": "White pushes a4, aiming to create passed pawn."},
-        {"num_move": 38, "white_moves": "Rc8+", "black_moves": "Kh7", "comment": "White checks king and takes control of seventh rank."}
-      ]
-    },
-    {
-      "white": "Doluhanova, Evgeniya",
-      "black": "Lu, Miaoyi",
-      "moves": [
-        {"num_move": 7, "white_moves": "O-O", "black_moves": "a6", "comment": "White castles kingside for safety."},
-        {"num_move": 10, "white_moves": "a4", "black_moves": "cxd4", "comment": "White pushes a4 for queen-side expansion."},
-        {"num_move": 11, "white_moves": "axb5", "black_moves": "dxc3", "comment": "White sacrifices a pawn on b5 for open lines."},
-        {"num_move": 12, "white_moves": "bxc6", "black_moves": "Qxd1", "comment": "White captures c6, leading to queen exchange."},
-        {"num_move": 16, "white_moves": "Ba4", "black_moves": "O-O-O", "comment": "White moves bishop to a4, targeting king."},
-        {"num_move": 20, "white_moves": "f3", "black_moves": "Rhd8", "comment": "White plays f3 to solidify position."},
-        {"num_move": 22, "white_moves": "Ra5", "black_moves": "g6", "comment": "White activates rook on fifth rank."},
-        {"num_move": 26, "white_moves": "Ne2", "black_moves": "f6", "comment": "White repositions knight for better control."},
-        {"num_move": 28, "white_moves": "c5", "black_moves": "Bc7", "comment": "White advances c-pawn, challenging Black's structure."},
-        {"num_move": 33, "white_moves": "Rc1", "black_moves": "Kb7", "comment": "White doubles on the c-file, increasing pressure."}
-      ]
-    },
-    {
-      "white": "Kulkarni, Bhakti",
-      "black": "Mehmed, Elif",
-      "moves": [
-        {"num_move": 4, "white_moves": "O-O", "black_moves": "Bg4", "comment": "White castles for early safety."},
-        {"num_move": 8, "white_moves": "cxd5", "black_moves": "exd5", "comment": "White opens the center with pawn capture."},
-        {"num_move": 11, "white_moves": "Nh4", "black_moves": "Bg6", "comment": "White repositions knight towards kingside."},
-        {"num_move": 13, "white_moves": "f4", "black_moves": "Bc2", "comment": "White pushes f4 to increase central control."},
-        {"num_move": 16, "white_moves": "Bxe4", "black_moves": "dxe4", "comment": "White captures central pawn to challenge structure."},
-        {"num_move": 20, "white_moves": "Nh6", "black_moves": "f5", "comment": "Knight moves to h6, posing threats to Black's king."},
-        {"num_move": 26, "white_moves": "gxf5", "black_moves": "gxf5", "comment": "White opens kingside with pawn break."},
-        {"num_move": 30, "white_moves": "Qd1", "black_moves": "Bxa3", "comment": "White repositions queen, eyeing exposed pawn."},
-        {"num_move": 34, "white_moves": "Ng8", "black_moves": "Kb6", "comment": "Knight infiltrates into Black's position, increasing threats."},
-        {"num_move": 37, "white_moves": "d5", "black_moves": "Nc5", "comment": "White advances d-pawn, seeking central control."}
-      ]
-    },
-    {
-      "white": "Maltsevskaya, Aleksandra",
-      "black": "Vujovic, Vera",
-      "moves": [
-        {"num_move": 5, "white_moves": "d3", "black_moves": "Nbd7", "comment": "White opts for a solid center with d3."},
-        {"num_move": 7, "white_moves": "Qe1", "black_moves": "e5", "comment": "White prepares for kingside activity with Qe1."},
-        {"num_moves": 10, "white_moves": "Nh4", "black_moves": "O-O-O", "comment": "Knight repositions to h4, targeting f5/g6."},
-        {"num_moves": 14, "white_moves": "Nf5", "black_moves": "Bg6", "comment": "Knight advances to f5, pressuring Black's position."},
-        {"num_moves": 18, "white_moves": "a5", "black_moves": "c5", "comment": "White expands on the queenside with a5."},
-        {"num_moves": 21, "white_moves": "b6", "black_moves": "Qe7", "comment": "White creates pawn wedge on b6, cramping Black."},
-        {"num_moves": 22, "white_moves": "a6", "black_moves": "Nxg2", "comment": "a6 push followed by knight sac, opening lines."},
-        {"num_moves": 24, "white_moves": "bxa7+", "black_moves": "Ka8", "comment": "White checks by capturing on a7, opening attack paths."},
-        {"num_moves": 28, "white_moves": "axb7+", "black_moves": "Rxb7", "comment": "a-pawn sac disrupts Black's pawn structure."},
-        {"num_moves": 30, "white_moves": "a8=Q+", "black_moves": "", "comment": "White promotes to queen, checking and gaining material."}
+        {
+          "num_move": 6,
+          "white_move": "O-O",
+          "black_move": "",
+          "comment": "Белые быстро осуществляют рокировку, обеспечивая безопасность короля.",
+          "intr_cl": "white"
+        },
+        {
+          "num_move": 10,
+          "white_move": "",
+          "black_move": "O-O",
+          "comment": "Черные отвечают рокировкой, также выводя короля в безопасное место.",
+          "intr_cl": "black"
+        },
+        {
+          "num_move": 16,
+          "white_move": "",
+          "black_move": "f5",
+          "comment": "Черные делают агрессивный ход пешкой, нападая на центр.",
+          "intr_cl": "black"
+        },
+        {
+          "num_move": 18,
+          "white_move": "Ng3",
+          "black_move": "",
+          "comment": "Белые развивают коня, нападая на королевский фланг.",
+          "intr_cl": "white"
+        },
+        {
+          "num_move": 20,
+          "white_move": "g4",
+          "black_move": "",
+          "comment": "Белые начинают атаку на королевском фланге.",
+          "intr_cl": "white"
+        },
+        {
+          "num_move": 24,
+          "white_move": "",
+          "black_move": "Ne5",
+          "comment": "Черные консолидируют центральные позиции, перемещая коня на активную позицию.",
+          "intr_cl": "black"
+        },
+        {
+          "num_move": 25,
+          "white_move": "Rd1",
+          "black_move": "",
+          "comment": "Белые пытаются усилить давление в центре.",
+          "intr_cl": "white"
+        },
+        {
+          "num_move": 28,
+          "white_move": "",
+          "black_move": "Nd3",
+          "comment": "Черные создают тройную угрозу на ферзевом фланге.",
+          "intr_cl": "black"
+        },
+        {
+          "num_move": 30,
+          "white_move": "",
+          "black_move": "Nf2+",
+          "comment": "Черные дают шах, вынуждая белого короля перемещаться.",
+          "intr_cl": "black"
+        },
+        {
+          "num_move": 34,
+          "white_move": "Bxf2",
+          "black_move": "",
+          "comment": "Белые вынужденно жертвуют слона, чтобы избежать мата.",
+          "intr_cl": "white"
+        },
+        {
+          "num_move": 43,
+          "white_move": "",
+          "black_move": "Qxf1+",
+          "comment": "Черные меняют ферзей, чтобы упростить окончание партии.",
+          "intr_cl": "black"
+        },
+        {
+          "num_move": 48,
+          "white_move": "cxb4",
+          "black_move": "",
+          "comment": "Белые стараются создать контригру на ферзевом фланге.",
+          "intr_cl": "white"
+        },
+        {
+          "num_move": 49,
+          "white_move": "Bb5",
+          "black_move": "",
+          "comment": "Белые укрепляют свои позиции, но черные находятся на победном пути.",
+          "intr_cl": "white"
+        }
       ]
     }
   ]

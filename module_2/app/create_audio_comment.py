@@ -3,7 +3,7 @@ import requests
 
 def audio_comm(comment, output_name):
     API_URL = "https://api-inference.huggingface.co/models/facebook/mms-tts-rus"
-    headers = {"Authorization": f"Bearer TOKEN_HuggingFace"}
+    headers = {"Authorization": f"Bearer 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"}
 
 
     def query(payload):

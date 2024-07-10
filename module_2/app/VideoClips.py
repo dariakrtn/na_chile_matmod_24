@@ -14,7 +14,7 @@ def timing_crop_2(video, parse, turn, w_start_time, audio):
     b_time_in_sec = (int(parse['time_b'][turn-1]) - int(parse['time_b'][0]))/1000 + b_start_time
     time_turns[0] = w_time_in_sec - 10
     time_turns[1] = b_time_in_sec + 10
-    videoclip = VideoFileClip(video).rotate(90).resize((1920, 1080))
+    videoclip = VideoFileClip(video).resize((1920, 1080))
     videoclip = videoclip.subclip(time_turns[0], time_turns[1]).set_audio(audio_clip)
     #video.write_videofile(filename = str(np.random.randint(10))+video)
     return videoclip, w_time_in_sec, b_time_in_sec, time_turns

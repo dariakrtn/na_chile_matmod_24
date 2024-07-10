@@ -1,327 +1,92 @@
 {
   "games": [
     {
-      "white": "Kulkarni, Bhakti",
+      "white": "Vujovic, Vera",
+      "black": "Djukic, Sandra",
       "moves": [
+        {
+          "num_move": 4,
+          "white_move": "d2-dxe5",
+          "black_move": "d2-dxe5",
+          "comment": "Белые захватывают контроль в центре",
+          "intr_cl": "white"
+        },
         {
           "num_move": 5,
-          "white_move": "O-O",
-          "black_move": "O-O",
-          "comment": "Обе стороны завершают рокировку, обеспечивая безопасность королей."
-        },
-        {
-          "num_move": 6,
-          "white_move": "c4",
-          "black_move": "c6",
-          "comment": "Начинается борьба за центральные поля."
-        },
-        {
-          "num_move": 10,
-          "white_move": "Qxe7",
-          "black_move": "Re8",
-          "comment": "Белые выигрывают пешку, жертвуя качество."
-        },
-        {
-          "num_move": 13,
-          "white_move": "Qh4",
-          "black_move": "Bd5",
-          "comment": "Белые переводят ферзя на более активную позицию."
-        },
-        {
-          "num_move": 14,
-          "white_move": "Nc3",
-          "black_move": "Ne4",
-          "comment": "Черные пытаются контратаковать через центр."
-        },
-        {
-          "num_move": 16,
-          "white_move": "Nxd5",
-          "black_move": "cxd5",
-          "comment": "Белые выигрывают фигуру, раскрыв позицию противника."
-        },
-        {
-          "num_move": 17,
-          "white_move": "Bxg5",
-          "black_move": "Rxe2",
-          "comment": "Активизация слона на фоне угрозы матовой атаки."
-        },
-        {
-          "num_move": 20,
-          "white_move": "Rac1",
-          "black_move": "Rxc1",
-          "comment": "Белые полностью контролируют открытую линию."
-        },
-        {
-          "num_move": 32,
-          "white_move": "Rc7",
-          "black_move": "Bf6",
-          "comment": "Белые захватывают седьмую горизонталь, создавая угрозы."
-        },
-        {
-          "num_move": 44,
-          "white_move": "Bxb6",
-          "black_move": "Bb4",
-          "comment": "Белые захватывают важную пешку и продолжают давление."
-        }
-      ]
-    },
-    {
-      "white": "Maltsevskaya, Aleksandra",
-      "moves": [
-        {
-          "num_move": 7,
-          "white_move": "O-O",
-          "black_move": "O-O",
-          "comment": "Обе стороны завершают рокировку, обеспечивая безопасность королей."
-        },
-        {
-          "num_move": 13,
-          "white_move": "a4",
-          "black_move": "Rd8",
-          "comment": "Белые начинают атаку на ферзевом фланге."
-        },
-        {
-          "num_move": 16,
-          "white_move": "Re1",
-          "black_move": "Re8",
-          "comment": "Обе стороны укрепляют свои позиции на центральных линиях."
-        },
-        {
-          "num_move": 18,
-          "white_move": "Nxe5",
-          "black_move": "Qxe5",
-          "comment": "Белые жертвуют пешку ради активной игры."
-        },
-        {
-          "num_move": 19,
-          "white_move": "f4",
-          "black_move": "Qh5",
-          "comment": "Белые начинают атаку на королевском фланге."
-        },
-        {
-          "num_move": 21,
-          "white_move": "Qd1",
-          "black_move": "Qxd1",
-          "comment": "Размен ферзей улучшает шансы белых на эндшпиль."
-        },
-        {
-          "num_move": 26,
-          "white_move": "f5",
-          "black_move": "Bb3",
-          "comment": "Белые усиливают давление, используя форпост на f5."
-        },
-        {
-          "num_move": 31,
-          "white_move": "Ra8+",
-          "black_move": "Nf8",
-          "comment": "Белые заставляют черных способствовать активизации своих фигур."
-        },
-        {
-          "num_move": 39,
-          "white_move": "Rb8",
-          "black_move": "Re7",
-          "comment": "Белые захватывают открытую линию и начинают активную игру."
-        },
-        {
-          "num_move": 44,
-          "white_move": "Ne6",
-          "black_move": "Rd7",
-          "comment": "Белые выигрывают качество и переходят в выигрышный эндшпиль."
-        }
-      ]
-    },
-    {
-      "white": "Vujovic, Vera",
-      "moves": [
-        {
-          "num_move": 6,
-          "white_move": "f4",
-          "black_move": "Bb4",
-          "comment": "Белые начинают активную игру на королевском фланге."
+          "white_move": "Qd1-d8+",
+          "black_move": "K8xd8",
+          "comment": "Размен ферзей и испорченная рокировка черных",
+          "intr_cl": "white"
         },
         {
           "num_move": 8,
           "white_move": "O-O-O",
           "black_move": "Bg4",
-          "comment": "Белые завершают длинную рокировку, готовя атаку."
-        },
-        {
-          "num_move": 10,
-          "white_move": "Bf3",
-          "black_move": "Kc8",
-          "comment": "Белые усиливают давление на f файл."
+          "comment": "Белые активно развивают фигуры и спрашивают ладью",
+          "intr_cl": "white"
         },
         {
           "num_move": 12,
           "white_move": "Bxg4+",
           "black_move": "Nexg4",
-          "comment": "Элегантный размен фигур с целью улучшения позиции."
+          "comment": "Белые устраняют активного слона черных",
+          "intr_cl": "white"
         },
         {
-          "num_move": 14,
-          "white_move": "h3",
-          "black_move": "Ne3",
-          "comment": "Белые пытаются разменять активных коней черных."
+          "num_move": 13,
+          "white_move": "Rdf1",
+          "black_move": "Re8",
+          "comment": "Белые удваивают ладьи на линии f",
+          "intr_cl": "white"
         },
         {
-          "num_move": 17,
-          "white_move": "Bg5",
-          "black_move": "Bc5",
-          "comment": "Белые активируют своего слона."
+          "num_move": 15,
+          "white_move": "Rxf4",
+          "black_move": "Nxg2",
+          "comment": "Жертва слона для активизации ладьи",
+          "intr_cl": "white"
         },
         {
-          "num_move": 20,
-          "white_move": "Rxf6",
-          "black_move": "b5",
-          "comment": "Белые начинают комбинацию с преимуществом в центре."
+          "num_move": 21,
+          "white_move": "Rxf7",
+          "black_move": "b4",
+          "comment": "Белые ладьи на седьмом ряду создают сильное давление",
+          "intr_cl": "white"
         },
         {
           "num_move": 22,
           "white_move": "Nd5",
           "black_move": "Bd6",
-          "comment": "Белые переходят в атаку, используя силу центра."
-        },
-        {
-          "num_move": 30,
-          "white_move": "Nf5",
-          "black_move": "Be5",
-          "comment": "Белые угрожают выиграть фигуру."
-        },
-        {
-          "num_move": 32,
-          "white_move": "Re7",
-          "black_move": "Bf4+",
-          "comment": "Белые контролируют открытую линию и заканчивают атаку."
-        }
-      ]
-    },
-    {
-      "white": "Mehmed, Elif",
-      "moves": [
-        {
-          "num_move": 4,
-          "white_move": "Nxd4",
-          "black_move": "Bc5",
-          "comment": "Белые выигрывают темп, развивая фигуру."
-        },
-        {
-          "num_move": 6,
-          "white_move": "Qf3",
-          "black_move": "Qxf3",
-          "comment": "Белые предлагают размен ферзей, улучшая свою структуру."
-        },
-        {
-          "num_move": 10,
-          "white_move": "Bd3",
-          "black_move": "Ne7",
-          "comment": "Белые развивают фигуру, контролируя центр."
-        },
-        {
-          "num_move": 12,
-          "white_move": "Rg1",
-          "black_move": "O-O",
-          "comment": "Белые строят давление по открытой линии."
-        },
-        {
-          "num_move": 19,
-          "white_move": "Nc4",
-          "black_move": "fxe4",
-          "comment": "Белые начинают активные действия на ферзевом фланге."
-        },
-        {
-          "num_move": 27,
-          "white_move": "Rg6",
-          "black_move": "Nb4",
-          "comment": "Белые начинают комбинацию на ферзевом фланге."
-        },
-        {
-          "num_move": 28,
-          "white_move": "f5",
-          "black_move": "Nxd3",
-          "comment": "Активные действия белых на королевском фланге."
-        },
-        {
-          "num_move": 32,
-          "white_move": "Rd1",
-          "black_move": "Kg8",
-          "comment": "Белые полностью контролируют централизованные поля."
-        },
-        {
-          "num_move": 42,
-          "white_move": "d7",
-          "black_move": "b5",
-          "comment": "Белые делают решающее продвижение пешки в ферзи."
-        },
-        {
-          "num_move": 45,
-          "white_move": "Ke7",
-          "black_move": "Resign",
-          "comment": "Черные сдаются после продвижения белой пешки."
-        }
-      ]
-    },
-    {
-      "white": "Lu, Miaoyi",
-      "moves": [
-        {
-          "num_move": 6,
-          "white_move": "Be3",
-          "black_move": "Nf6",
-          "comment": "Белые стремятся к активной фигуре и развитию."
-        },
-        {
-          "num_move": 8,
-          "white_move": "Be2",
-          "black_move": "d6",
-          "comment": "Обе стороны завершают развитие фигур."
-        },
-        {
-          "num_move": 18,
-          "white_move": "Qb2",
-          "black_move": "Qb6",
-          "comment": "Обе стороны защищают свои позиции."
+          "comment": "Конь стремится к ключевым позициям",
+          "intr_cl": "white"
         },
         {
           "num_move": 23,
-          "white_move": "Nb5",
-          "black_move": "Bxb5",
-          "comment": "Белые создают угрозу на ферзевом фланге."
+          "white_move": "Nf6",
+          "black_move": "Re5",
+          "comment": "Создание угрозы мата и выигрыш качества",
+          "intr_cl": "white"
         },
         {
-          "num_move": 28,
-          "white_move": "f4",
-          "black_move": "Rf8",
-          "comment": "Белые начинают активную атаку на королевском фланге."
+          "num_move": 26,
+          "white_move": "Rf7",
+          "black_move": "Ne6",
+          "comment": "Ладья продолжает доминировать",
+          "intr_cl": "white"
         },
         {
-          "num_move": 36,
-          "white_move": "Be3",
-          "black_move": "gxf5",
-          "comment": "Белые активируют своего слона и грозят атакой."
+          "num_move": 31,
+          "white_move": "Nd5",
+          "black_move": "Rb8",
+          "comment": "Белый конь блокирует активность черных",
+          "intr_cl": "white"
         },
         {
-          "num_move": 41,
-          "white_move": "Bxd8",
-          "black_move": "Rxd8",
-          "comment": "Белые выигрывают качество."
-        },
-        {
-          "num_move": 49,
-          "white_move": "Rd8",
-          "black_move": "Kg7",
-          "comment": "Белые захватывают открытую линию и создают угрозы."
-        },
-        {
-          "num_move": 54,
-          "white_move": "g3",
-          "black_move": "Bd4",
-          "comment": "Белые начинают атаку на королевском фланге."
-        },
-        {
-          "num_move": 62,
-          "white_move": "g4",
-          "black_move": "Be3",
-          "comment": "Белые завершают атаку, выигрывая фигуру."
+          "num_move": 34,
+          "white_move": "Rxe6+",
+          "black_move": "",
+          "comment": "Шах и неизбежная потеря материала",
+          "intr_cl": "white"
         }
       ]
     }
