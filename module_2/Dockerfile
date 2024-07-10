@@ -1,7 +1,9 @@
-
 FROM python:3.10
 WORKDIR /app
 COPY . .
+RUN apt-get -y update
+RUN apt-get -y upgrade
+RUN apt-get install -y ffmpeg
 RUN pip install --no-cache-dir -r requirements.txt
-CMD ["streamlit", "run", "app/main.py", "--server.maxUploadSize 2048"]
+CMD ["streamlit", "run", "app/main.py", "--server.maxUploadSize=8192"]
 EXPOSE 8501

@@ -77,6 +77,6 @@ def pars_pgn(pgn_str, match_gpt):
     return res, svg_all, first_time
 
 # test
-k = str(open('../Ahackaton/Belgrade2024/Round_1.pgn.pgn').read())
-pars, svg_cadr, k = pars_pgn(k, json.load((open('../Ahackaton/Belgrade2024/Round_1.json', encoding="utf-8"))))
-print(k)
+#k = str(open('../Ahackaton/Belgrade2024/Round_1.pgn.pgn').read())
+#pars, svg_cadr, k = pars_pgn(k, json.load((open('../Ahackaton/Belgrade2024/Round_1.json', encoding="utf-8"))))
+#print(k)

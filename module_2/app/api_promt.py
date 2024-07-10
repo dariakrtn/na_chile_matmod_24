@@ -43,7 +43,7 @@ def comm_gpt(pgn_str):
     }
     ]}
     """},
-            {"role": "user", "content": open(pgn_str).read()}
+            {"role": "user", "content": pgn_str}
         ]
     )
     res_json = json.loads(response.choices[0].message.content)

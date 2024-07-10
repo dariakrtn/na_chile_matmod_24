@@ -2,6 +2,7 @@ import pars
 import api_promt
 import VideoClips
 from cutting_video import save_clip
+import io
 import create_audio_comment
 import json
 
@@ -54,9 +55,10 @@ def create_intersting_clips(video_file, pgn_file, start_time):
     # with open("./Ahackaton/Belgrade2024/Round_1.json", "r", encoding="utf-8") as f:
     #     res_json = json.loads(f.read())
 
-    df, svg_cadr, first_t = pars.pars_pgn(pgn_str, res_json)[0][0]
+    df, svg_cadr, first_t = pars.pars_pgn(pgn_str, res_json)
+    df = df[0]
 
-    video_data = video_file.read()
+    video_data = io.BytesIO(video_file.read())
 
     video_file_path = "data/video.mp4"
     write_bytesio_to_file(video_file_path, video_data)

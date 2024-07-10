@@ -29,8 +29,8 @@ def save_clip(video, df, start_time, first_time):
             st_t = (int(df['time_w'][i]) - int(first_time)) // 1000 + start_time - 5
         else:
             st_t = (int(df['time_b'][i]) - int(first_time)) // 1000 + start_time - 5
-        cut_video(video, f'data/{i}.mp4', audio_file_i_path, st_t)
-        res.append(f'data/{i}.mp4')
+        cut_video(video, f'data/clip_{i}.mp4', audio_file_i_path, st_t)
+        res.append(f'data/clip_{i}.mp4')
         remove(audio_file_i_path)
     return res
 
